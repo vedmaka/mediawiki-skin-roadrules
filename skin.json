@@ -1,0 +1,39 @@
+{
+    "name": "Roadrules",
+    "author": [
+        "Alexey"
+    ],
+    "url": "https://github.com/vedmaka/mediawiki-skin-roadrules",
+    "descriptionmsg": "roadrules-skin-desc",
+    "namemsg": "skinname-roadrules",
+    "license-name": "GPL-2.0+",
+    "type": "skin",
+    "ValidSkinNames": {
+        "roadrules": "Roadrules"
+    },
+    "MessagesDirs": {
+        "Roadrules": [
+            "i18n"
+        ]
+    },
+    "AutoloadClasses": {
+        "SkinRoadrules": "SkinRoadrules.php",
+        "RoadrulesTemplate": "RoadrulesTemplate.php"
+    },
+    "ResourceModules": {
+        "skins.roadrules.styles": {
+            "styles": [
+                "assets/css/style.less"
+            ]
+        },
+        "skins.roadrules.js": {
+            "scripts": [
+                "assets/js/script.js"
+            ]
+        }
+    },
+    "ResourceFileModulePaths": {
+        "localBasePath": "",
+        "remoteSkinPath": "Roadrules"
+    }
+}
