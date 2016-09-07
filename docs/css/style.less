@@ -30,7 +30,55 @@ a:hover {
 	clear: both;
 }
 
+#actions-panel {
+	position: relative;
+	z-index: 1;
+	background-color: #ffe09d;
+	border-bottom: 1px solid #d68a24;
+	.container {
+
+		line-height: 22px;
+		width: 1100px;
+		margin: 0 auto;
+
+		ul {
+			float: left;
+			margin: 0;
+			padding: 12px 0 10px 0;
+			list-style: none;
+			li {
+				color: #573311;
+				display: inline-block;
+				a {
+					color: #573311;
+					font-weight: 400;
+					&:hover {
+						color: #6e4315;
+					}
+				}
+				&::after {
+					content: "/";
+					color: #e18a2a;
+					display: inline-block;
+					margin: 0 6px;
+				}
+				&:last-child::after {
+					display: none;
+				}
+			}
+		}
+
+		ul.user-menu {
+			float: right;
+		}
+
+	}
+}
+
 header {
+
+	position: relative;
+	z-index: 2;
 
 	height: 80px;
 	background-color: white;
