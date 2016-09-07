@@ -1,3 +1,118 @@
-@media (min-width: 1024px) {
+@media (max-width: 1160px) {
+
+	header {
+		.container {
+			width: 100%;
+		}
+	}
+
+	footer {
+		.container {
+			width: 100%;
+		}
+	}
+
+}
+
+@media (max-width: 1100px) {
+
+	#content.mw-body {
+		.container {
+			width: 100%;
+			box-sizing: border-box;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+	}
+
+}
+
+@media (max-width: 987px) {
+
+	header {
+
+		ul.header-menu {
+			li {
+				display: none;
+			}
+			li.header-menu-icon {
+				float: right;
+				color: #45ac57;
+				display: inline-block;
+				cursor: pointer;
+				font-size: 20px;
+				margin-right: 20px;
+			}
+		}
+
+		ul.header-menu.responsive-menu {
+			position: relative;
+			width: 100%;
+			background-color: white;
+			box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.23);
+			padding-bottom: 15px;
+			padding-top: 15px;
+			margin-bottom: 25px;
+			text-align: center;
+			li.header-menu-icon {
+				position: absolute;
+				right: 0;
+				top: -47px;
+				float: none;
+			}
+			li {
+				text-align: center;
+				float: none;
+				display: inline-block;
+				margin-bottom: 10px;
+				a {
+					display: block;
+				}
+			}
+		}
+
+	}
+
+	footer {
+
+		height: auto;
+		padding-bottom: 25px;
+
+		a.logo {
+			display: none;
+		}
+
+		ul.footer-menu {
+
+			text-align: center;
+			float: none;
+
+			li {
+				font-size: 12px;
+			}
+
+		}
+
+	}
+
+	#content.mw-body {
+		.container {
+			#bodyContent {
+				.infobox-right {
+					overflow: hidden;
+					width: 100%;
+					float: none;
+					margin: 0 0 20px 0;
+					.infobox-content {
+						img {
+							max-width: 200px;
+							float: left;
+							margin: 0 10px 10px 0;
+						}
+					}
+				}
+			}
+		}
+	}
 
 }

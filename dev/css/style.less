@@ -47,6 +47,7 @@ header {
 		display: block;
 		padding-top: 8px;
 		float: left;
+		margin-left: 10px;
 
 		img {
 			width: 234px;
@@ -68,14 +69,17 @@ header {
 			font-size: 14px;
 			margin-right: 8px;
 
-			&:last-child {
+/*			&:last-child {
 				margin-right: 0;
-			}
+			}*/
 
 			a {
 				font-weight: bold;
 				text-decoration: none;
 			}
+		}
+		li.header-menu-icon {
+			display: none;
 		}
 	}
 
@@ -95,6 +99,7 @@ footer {
 		display: block;
 		padding-top: 8px;
 		float: left;
+		margin-left: 10px;
 
 		img {
 			width: 234px;
@@ -116,9 +121,9 @@ footer {
 			font-size: 14px;
 			margin-right: 8px;
 
-			&:last-child {
+/*			&:last-child {
 				margin-right: 0;
-			}
+			}*/
 
 			a {
 				font-weight: bold;
@@ -232,9 +237,11 @@ footer {
 								color: @colorGray;
 								width: 65px;
 								display: inline-block;
+								float: left;
 							}
 							.toctext {
-
+								margin-left: 65px;
+								display: block;
 							}
 						}
 					}
