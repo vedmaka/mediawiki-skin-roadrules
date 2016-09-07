@@ -1,7 +1,12 @@
 $(function(){
 
-	$('.skin-collapsible').skinCollapsible();
-	$('.skinSwitch').skinSwitch();
+	if( $('.skin-collapsible').length ) {
+		$('.skin-collapsible').skinCollapsible();
+	}
+
+	if( $('.skinSwitch').length ) {
+		$('.skinSwitch').skinSwitch();
+	}
 
 	if( $('#references-collapse').length ) {
 		$('#references-collapse').click(function(e){
