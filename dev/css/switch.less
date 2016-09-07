@@ -1,0 +1,43 @@
+.sub-heading-switch {
+	.sub-heading-title-text {
+		position: relative;
+		ul.sub-heading-menu {
+			display: none;
+			z-index: 1000;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: white;
+			width: 100%;
+			padding: 15px 15px 15px 15px;
+			margin: 0;
+			box-shadow: 1px 1px 30px 5px rgba(0, 0, 0, 0.13);
+			li {
+				list-style: none;
+				line-height: 24px;
+				margin-bottom: 15px;
+				a {
+					font-size: 22px;
+					font-weight: 400;
+					color: #505050;
+					&:hover {
+						color: #45ac57;
+					}
+				}
+				&::before {
+					content: "";
+					display: inline-block;
+					width: 10px;
+					height: 18px;
+					background: url("../img/switch_sm.png") 0 0 no-repeat;
+					cursor: pointer;
+					position: relative;
+					margin-right: 4px;
+				}
+			}
+		}
+	}
+	&.switch-open ul.sub-heading-menu {
+		display: block;
+	}
+}

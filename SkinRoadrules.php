@@ -22,7 +22,7 @@ class SkinRoadrules extends SkinTemplate {
 	function setupSkinUserCss( OutputPage $out ) {
 		parent::setupSkinUserCss( $out );
 
-		$styles = array( 'mediawiki.skinning.interface', 'skins.roadrules.styles' );
+		$styles = array( /*'mediawiki.skinning.interface',*/ 'skins.roadrules.styles' );
 		$out->addModuleStyles( $styles );
 	}
 
