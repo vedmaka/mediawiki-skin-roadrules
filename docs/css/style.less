@@ -204,6 +204,10 @@ footer {
 
 		#bodyContent {
 
+			.tooltipster-content-wrapper {
+				display: none;
+			}
+
 			.infobox-right {
 				float: right;
 				margin-left: 50px;
@@ -320,10 +324,13 @@ footer {
 					color: white;
 					font-size: 12px;
 					font-weight: bold;
-					padding: 20px 0;
+					padding: 20px 10px;
 					border-right: 1px solid #aecdb3;
 					&:last-child {
 						border: 0;
+					}
+					&.text-left {
+						text-align: left;
 					}
 				}
 				td {
@@ -335,6 +342,28 @@ footer {
 					}
 					a {
 						text-decoration: underline;
+					}
+					&.color-gray {
+						background-color: #f2f2f2;
+					}
+					&.color-red {
+						background-color: #ffdbdb;
+						a {
+							color: #ff0000;
+							text-decoration: underline;
+						}
+					}
+					&.color-yellow {
+						background-color: #fbf8db;
+					}
+					&.color-green {
+						background-color: #ebffee;
+					}
+					&.text-center {
+						text-align: center;
+					}
+					&.text-left {
+						text-align: left;
 					}
 				}
 				tr:last-child td {

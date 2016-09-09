@@ -21,6 +21,40 @@ $(function(){
 		});
 	}
 
+	if( $('.tooltip-link').length ) {
+		$('.tooltip-link').tooltipster({
+			theme: 'tooltipster-shadow',
+			delay: 100,
+			maxWidth: 280,
+			side: 'bottom',
+			functionPosition: function(instance, helper, position){
+/*				console.log(instance);
+				console.log(helper);
+				console.log(position);*/
+				position.coord.top += 0;
+				position.coord.left += position.size.width/2 - 15; //TODO: is it right way here? lets see and get back to it later
+				return position;
+			},
+			content: 'Loading..',
+			// 'instance' is basically the tooltip. More details in the "Object-oriented Tooltipster" section.
+			functionBefore: function(instance, helper) {
+				var $origin = $(helper.origin);
+				// we set a variable so the data is only loaded once via Ajax, not every time the tooltip opens
+				if ($origin.data('loaded') !== true) {
+
+					//Generate templated data
+					var title = $origin.data('tooltip-field-title');
+					var content = $origin.data('tooltip-field-content');
+
+					// call the 'content' method to update the content of our tooltip with the returned data
+					instance.content($('<span class="tooltip-content-title">'+title+'</span><span class="tooltip-content-text">'+content+'</span>'));
+					// to remember that the data has been loaded
+					$origin.data('loaded', true);
+				}
+			}
+		});
+	}
+
 	$('.header-menu-icon').click(function(){
 		$(this).parent('ul').toggleClass('responsive-menu');
 	});
