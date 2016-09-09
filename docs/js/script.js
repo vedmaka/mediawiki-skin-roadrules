@@ -34,7 +34,8 @@ $(function(){
 			},
 			triggerClose: {
 				mouseleave: true,
-				tap: true
+				tap: true,
+				touchleave: true
 			},
 			functionPosition: function(instance, helper, position) {
 
