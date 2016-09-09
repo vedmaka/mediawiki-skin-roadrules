@@ -27,7 +27,7 @@ $(function(){
 			delay: 100,
 			maxWidth: 280,
 			side: 'bottom',
-			//trigger: 'hover',
+			trigger: 'tap',
 			functionPosition: function(instance, helper, position) {
 
 				if( helper.geo.available.window.right.width >= position.size.width ) {
