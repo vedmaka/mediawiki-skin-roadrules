@@ -1,3 +1,5 @@
+/* --------------- Landing 1 --------------------------------- */
+
 #bodyContent .landing_1_block {
 
 	width: 908px;
@@ -99,6 +101,8 @@
 
 }
 
+/* --------------- Landing 2 --------------------------------- */
+
 #bodyContent .landing_2_block {
 
 	width: 100%;
@@ -151,6 +155,70 @@
 	#bodyContent .landing_2_block {
 		line-height: 0;
 		.landing_2_block_item {
+			line-height: normal;
+			display: inline-block;
+			float: none;
+			vertical-align: top;
+		}
+	}
+
+}
+
+/* --------------- Landing 3 (Cheatsheet) --------------------------------- */
+#bodyContent .landing_3_block {
+
+	width: 730px;
+	margin: 30px auto 0 auto;
+	overflow: hidden;
+
+	.landing_3_block_item {
+
+		box-sizing: border-box;
+		float: left;
+		margin-right: 12px;
+		width: 170px;
+		background-color: #d5e9d8;
+		height: 112px;
+		margin-bottom: 12px;
+		position: relative;
+
+		.landing_3_block_item-content {
+			width: 130px;
+			margin: 0 auto;
+			text-align: center;
+			.landing_3_block_item--image {
+				padding-top: 20px;
+				height: 40px;
+			}
+			.landing_3_block_item--text {
+				font-size: 15px;
+				font-weight: 900;
+				color: #45ac57;
+				text-transform: uppercase;
+			}
+		}
+
+		> a {
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: white;
+			opacity: 0;
+			z-index: 2;
+		}
+
+	}
+
+}
+
+@media (max-width: 980px) {
+
+	#bodyContent .landing_3_block {
+		line-height: 0;
+		width: 100%;
+		text-align: center;
+		.landing_3_block_item {
 			line-height: normal;
 			display: inline-block;
 			float: none;
