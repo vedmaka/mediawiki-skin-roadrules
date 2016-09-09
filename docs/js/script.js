@@ -27,7 +27,7 @@ $(function(){
 			delay: 100,
 			maxWidth: 280,
 			side: 'bottom',
-			trigger: 'tap',
+			trigger: 'click',
 			functionPosition: function(instance, helper, position) {
 
 				if( helper.geo.available.window.right.width >= position.size.width ) {
@@ -40,6 +40,7 @@ $(function(){
 			content: 'Loading..',
 			// 'instance' is basically the tooltip. More details in the "Object-oriented Tooltipster" section.
 			functionBefore: function(instance, helper) {
+				console.log(helper.event.type);
 				var $origin = $(helper.origin);
 				// we set a variable so the data is only loaded once via Ajax, not every time the tooltip opens
 				if ($origin.data('loaded') !== true) {
