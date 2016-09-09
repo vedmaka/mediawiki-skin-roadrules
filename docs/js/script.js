@@ -27,12 +27,14 @@ $(function(){
 			delay: 100,
 			maxWidth: 280,
 			side: 'bottom',
-			functionPosition: function(instance, helper, position){
-/*				console.log(instance);
-				console.log(helper);
-				console.log(position);*/
-				position.coord.top += 0;
-				position.coord.left += position.size.width/2 - 15; //TODO: is it right way here? lets see and get back to it later
+			//trigger: 'hover',
+			functionPosition: function(instance, helper, position) {
+
+				if( helper.geo.available.window.right.width >= position.size.width ) {
+					position.coord.top += 0;
+					position.coord.left += position.size.width/2 - 15; //TODO: is it right way here? lets see and get back to it later
+				}
+
 				return position;
 			},
 			content: 'Loading..',
