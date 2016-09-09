@@ -27,7 +27,14 @@ $(function(){
 			delay: 100,
 			maxWidth: 280,
 			side: 'bottom',
-			trigger: 'hover',
+			trigger: 'custom',
+			triggerOpen: {
+				mouseenter: true,
+				tap: true
+			},
+			triggerClose: {
+				mouseleave: true
+			},
 			functionPosition: function(instance, helper, position) {
 
 				if( helper.geo.available.window.right.width >= position.size.width ) {
