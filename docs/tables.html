@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet/less" type="text/css" href="css/style.less" />
+    <link rel="stylesheet/less" type="text/css" href="css/media.less" />
+    <link rel="stylesheet/less" type="text/css" href="css/collapsible.less" />
+    <link rel="stylesheet/less" type="text/css" href="css/switch.less" />
+    <script src="js/less.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <header>
+        <div class="container clearfix">
+            <a href="#" class="logo">
+                <img src="img/logo.png" />
+            </a>
+            <ul class="header-menu">
+                <li>
+                    <a href="#">insurance policy</a>
+                </li>
+                <li>
+                    <a href="#">fault rules</a>
+                </li>
+                <li>
+                    <a href="#">tow-by-laws</a>
+                </li>
+                <li>
+                    <a href="#">entire laws</a>
+                </li>
+                <li>
+                    <a href="#">claim map</a>
+                </li>
+                <li>
+                    <a href="#">claim start</a>
+                </li>
+                <li>
+                    <a href="#">rates down</a>
+                </li>
+                <li class="header-menu-icon">
+                    &#9776;
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="actions-panel">
+        <div class="container clearfix">
+            <ul>
+                <li>
+                    <a href="#">
+                        Edit
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        View History
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Delete
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Move
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Change Protection
+                    </a>
+                </li>
+            </ul>
+            <ul class="user-menu">
+                <li>
+                    Logged in as <b>Admin</b>
+                </li>
+                <li>
+                    <a href="#">
+                        Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="content" class="mw-body" role="main">
+        <a id="top"></a>
+        <div class="container">
+
+            <h1 id="firstHeading" class="firstHeading">Sample styles for tables</h1>
+
+            <div id="bodyContent" class="mw-body-content">
+
+                <h2>Regular table</h2>
+                <p>
+                    Simple table without any additional styles applied to it. Wraps to its content.
+                </p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Lorem ipsum</th>
+                            <th>Lorem ipsum lorem</th>
+                            <th>Lorem ipsum</th>
+                            <th>Lorem ipsum dolor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>50%</td>
+                            <td>25%</td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>50%</td>
+                            <td>25%</td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>50%</td>
+                            <td>25%</td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>50%</td>
+                            <td>25%</td>
+                            <td>0%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h2>Full-width table</h2>
+                <p>
+                    Table spans to full width of its container (page). Will result in free space conflict if
+                    used in the same row with infobox.
+                </p>
+                
+                <table class="full-width">
+                    <thead>
+                        <tr>
+                            <th>Lorem ipsum</th>
+                            <th>Lorem ipsum lorem</th>
+                            <th>Lorem ipsum</th>
+                            <th>Lorem ipsum dolor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>50%</td>
+                            <td>25%</td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>50%</td>
+                            <td>25%</td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>50%</td>
+                            <td>25%</td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>50%</td>
+                            <td>25%</td>
+                            <td>0%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h2>Left-span table</h2>
+                <p>
+                    First column of this table will take maximum available width, other columns will take rest.
+                    Compatible with infobox.
+                </p>
+                
+                <table class="flexible-left">
+                    <thead>
+                        <tr>
+                            <th>Lorem ipsum</th>
+                            <th>Lorem ipsum lorem</th>
+                            <th>Lorem ipsum</th>
+                            <th>Lorem ipsum dolor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>50%</td>
+                            <td>25%</td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>50%</td>
+                            <td>25%</td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>50%</td>
+                            <td>25%</td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>50%</td>
+                            <td>25%</td>
+                            <td>0%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h2>Right-span table</h2>
+                <p>
+                    Last column of this table will take maximum available width, other columns will take rest.
+                    Compatible with infobox.
+                </p>
+                
+                <table class="flexible-right">
+                    <thead>
+                        <tr>
+                            <th>Lorem ipsum</th>
+                            <th>Lorem ipsum lorem</th>
+                            <th>Lorem ipsum</th>
+                            <th>Lorem ipsum dolor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>50%</td>
+                            <td>25%</td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>50%</td>
+                            <td>25%</td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>50%</td>
+                            <td>25%</td>
+                            <td>0%</td>
+                        </tr>
+                        <tr>
+                            <td>Lorem ipsum dolor sit amet</td>
+                            <td>50%</td>
+                            <td>25%</td>
+                            <td>0%</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container clearfix">
+            <!--<a href="#" class="logo">
+                <img src="img/logo_bottom.png" />
+            </a>-->
+            <ul class="footer-menu">
+                <li>
+                    <a href="#">insurance policy</a>
+                </li>
+                <li>
+                    <a href="#">fault rules</a>
+                </li>
+                <li>
+                    <a href="#">tow-by-laws</a>
+                </li>
+                <li>
+                    <a href="#">entire laws</a>
+                </li>
+                <li>
+                    <a href="#">claim map</a>
+                </li>
+                <li>
+                    <a href="#">claim start</a>
+                </li>
+                <li>
+                    <a href="#">rates down</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/collapsible.js"></script>
+    <script src="js/switch.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
