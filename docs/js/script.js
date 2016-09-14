@@ -1,4 +1,8 @@
 $(function(){
+	
+	if( $('table.flex-table').length ) {
+		$('table.flex-table').flexTable();
+	}
 
 	if( $('.skin-collapsible').length ) {
 		$('.skin-collapsible').skinCollapsible();

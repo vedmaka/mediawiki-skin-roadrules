@@ -224,14 +224,35 @@ footer {
 					color: @colorGreen;
 					background-color: #f2f2f2;
 				}
+				.infobox-picture {
+						overflow: hidden;
+						line-height: 0;
+						font-size: 0;
+						img {
+							display: block;
+							width: 100%;
+						}
+					}
 				.infobox-content {
-					padding: 0 12px 12px 12px;
+					padding: 0 0 12px 0;
 					img {
 						margin-top: 15px;
 						width: 100%;
 					}
 					p {
 						margin: 8px 0;
+						padding: 0 12px;
+					}
+					table {
+						margin: 0;
+						tr {
+							td {
+								padding: 6px 8px;
+								&:first-child {
+									font-weight: 500;
+								}
+							}
+						}
 					}
 				}
 			}
@@ -330,7 +351,7 @@ footer {
 			}
 
 			table {
-				width: 100%;
+				/*width: 100%;*/
 				border: 1px solid @colorGreen;
 				border-collapse: collapse;
 				margin: 20px 0;
@@ -351,10 +372,12 @@ footer {
 					}
 				}
 				td {
+					/*width: 100%;*/ /* spans first td to 100% */
 					padding: 20px 15px;
 					border-bottom: 1px solid #d7d7d7;
 					border-right: 1px solid #aecdb3;
 					&:last-child {
+						/*width: 100%;*/ /* spans last td to 100%*/
 						border-right: 1px solid @colorGreen;
 					}
 					a {
@@ -386,6 +409,24 @@ footer {
 				}
 				tr:last-child td {
 					border-bottom: 1px solid @colorGreen;
+				}
+				&.flexible-left {
+					td {
+						width: 100%;
+						&:last-child {
+							width: 100%;
+						}
+					}
+				}
+				&.flexible-right {
+					td {
+						&:last-child {
+							width: 100%;
+						}
+					}
+				}
+				&.full-width {
+					width: 100%;
 				}
 			}
 
