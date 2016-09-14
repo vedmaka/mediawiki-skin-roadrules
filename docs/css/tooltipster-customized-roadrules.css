@@ -25,3 +25,11 @@
     color: #848484;
     display: block;
 }
+
+a.tooltip-link {
+    cursor: pointer;
+}
+
+.tooltipster-shadow .tooltipster-content a {
+    text-decoration: underline;
+}

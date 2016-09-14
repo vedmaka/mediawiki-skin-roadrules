@@ -32,6 +32,7 @@ $(function(){
 			maxWidth: 280,
 			side: 'bottom',
 			trigger: 'custom',
+			interactive: true,
 			triggerOpen: {
 				mouseenter: true,
 				tap: true
