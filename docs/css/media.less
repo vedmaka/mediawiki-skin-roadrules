@@ -105,6 +105,9 @@
 
 	}
 
+}
+
+@media (min-width: 560px) and (max-width: 980px) {
 	#content.mw-body {
 		.container {
 			#bodyContent {
@@ -113,18 +116,54 @@
 					width: 100%;
 					float: none;
 					margin: 0 0 20px 0;
+					.infobox-picture {
+						float: left;
+						margin-right: 10px;
+					}
 					.infobox-content {
 						img {
 							max-width: 200px;
 							float: left;
 							margin: 0 10px 10px 0;
 						}
+						table {
+							width: auto;
+							margin-left: 260px;
+							margin-top: 10px;
+							display: block;
+							border: 0;
+							th:last-child {
+								border: 0;
+							}
+							td:last-child {
+								border: 0;
+							}
+							tr:last-child {
+								border: 0;
+								td {
+									border-bottom: 0;
+								}
+							}
+						}
 					}
 				}
 			}
 		}
 	}
+}
 
+@media (max-width: 560px) {
+	#content.mw-body {
+		.container {
+			#bodyContent {
+				.infobox-right {
+					margin: 0 auto 30px auto;
+					float: none;
+					display: block;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 760px) {
