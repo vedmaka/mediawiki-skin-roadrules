@@ -96,10 +96,10 @@ class RoadrulesTemplate extends BaseTemplate {
 	            <ul>
 	            	<?php foreach($nav as $link_type): ?>
 	            	<?php foreach($link_type as $key => $link): ?>
-	            	<?php if(in_array($key, array('main','view','talk'))) { ?>
+	            	<?php if(in_array($key, array('main','template','special','view','talk','template_talk'))) { ?>
 	            	<?php continue; } ?>
 	                <li>
-	                    <a href="<?php echo $link['href']?>">
+	                    <a href="<?php echo $link['href']?>" id="action-<?php echo $key?>">
 	                        <?php echo $link['text'] ?>
 	                    </a>
 	                </li>
