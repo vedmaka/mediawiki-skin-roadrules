@@ -26,34 +26,35 @@ class RoadrulesTemplate extends BaseTemplate {
 		<div id="mw-page-base" class="noprint"></div>
 		<div id="mw-head-base" class="noprint"></div>
 		
-		<div id="content" class="mw-body" role="main">
+		<div id="content" class="mw-body clearfix" role="main">
         <a id="top"></a>
-        <div class="container">
+            <div class="container">
 
-			<?php
-			// Loose comparison with '!=' is intentional, to catch null and false too, but not '0'
-			if ( $this->data['title'] != '' ) {
-			?>
-			<h1 id="firstHeading" class="firstHeading" lang="<?php $this->text( 'pageLanguage' ); ?>"><?php
-				 $this->html( 'title' )
-			?></h1>
-			<?php
-			} ?>
-			<?php $this->html( 'prebodyhtml' ) ?>
-            <div id="bodyContent" class="mw-body-content">
-		
-			<!-- markup goes here -->
-			<?php
-				$this->html( 'bodycontent' );
-			?>
-			
-			<?php if ( $this->data['dataAfterContent'] ) {
-				$this->html( 'dataAfterContent' );
-			} ?>
-			
-			<?php $this->html( 'debughtml' ); ?>
-			</div>
-		</div>
+                <?php
+                // Loose comparison with '!=' is intentional, to catch null and false too, but not '0'
+                if ( $this->data['title'] != '' ) {
+                ?>
+                <h1 id="firstHeading" class="firstHeading" lang="<?php $this->text( 'pageLanguage' ); ?>"><?php
+                     $this->html( 'title' )
+                ?></h1>
+                <?php
+                } ?>
+                <?php $this->html( 'prebodyhtml' ) ?>
+                <div id="bodyContent" class="mw-body-content">
+
+                <!-- markup goes here -->
+                <?php
+                    $this->html( 'bodycontent' );
+                ?>
+
+                <?php if ( $this->data['dataAfterContent'] ) {
+                    $this->html( 'dataAfterContent' );
+                } ?>
+
+                <?php $this->html( 'debughtml' ); ?>
+                </div>
+            </div>
+        </div>
 		
 		<!-- footer -->
 		<?php $this->printFooter(); ?>
