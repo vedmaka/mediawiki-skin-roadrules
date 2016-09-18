@@ -23,11 +23,23 @@
     "ResourceModules": {
         "skins.roadrules.styles": {
             "styles": [
-                "assets/css/style.less"
+                "assets/css/normalize.css",
+                "assets/css/style.less",
+                "assets/css/media.less",
+                "assets/css/collapsible.less",
+                "assets/css/custom.less",
+                "assets/css/switch.less",
+                "assets/css/tooltipster.bundle.min.css",
+                "assets/css/tooltipster-sideTip-shadow.min.css",
+                "assets/css/tooltipster-customized-roadrules.css"
             ]
         },
         "skins.roadrules.js": {
             "scripts": [
+                "assets/js/collapsible.js",
+                "assets/js/flex-table.js",
+                "assets/js/switch.js",
+                "assets/js/tooltipster.bundle.min.js",
                 "assets/js/script.js"
             ]
         }

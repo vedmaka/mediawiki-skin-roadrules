@@ -1,0 +1,35 @@
+.tooltipster-shadow .tooltipster-content {
+    padding: 20px 15px 15px 15px;
+    font-size: 14px;
+}
+
+.tooltipster-shadow .tooltipster-content .tooltip-content-title {
+    color: #45ac57;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.tooltipster-shadow .tooltipster-content .tooltip-content-title::before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url("../img/tooltip_info.png") 0 0 no-repeat;
+    position: relative;
+    top: 3px;
+    margin-right: 6px;
+}
+
+.tooltipster-shadow .tooltipster-content .tooltip-content-text {
+    color: #848484;
+    display: block;
+}
+
+a.tooltip-link {
+    cursor: pointer;
+}
+
+.tooltipster-shadow .tooltipster-content a {
+    text-decoration: underline;
+}

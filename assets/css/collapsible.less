@@ -1,0 +1,29 @@
+ul.skin-collapsible {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	li {
+		display: block;
+		padding: 20px 0 5px 40px;
+		background: url("../img/collapsible-closed.png") 0 38px no-repeat;
+		border-bottom: 1px solid #45ac57;
+		> h1 {
+			color: #45ac57;
+			font-size: 18px !important;
+			cursor: pointer;
+		}
+		> p {
+			display: block;
+			overflow: hidden;
+			max-height: 0;
+
+		}
+		&.collapsible-open {
+			background-image: url("../img/collapsible-open.png");
+			p {
+				max-height: 1000px;
+				transition: all 0.3s;
+			}
+		}
+	}
+}
