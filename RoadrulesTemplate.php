@@ -1,8 +1,14 @@
 <?php
 
 class RoadrulesTemplate extends BaseTemplate {
+	
+	var $user;
 
 	public function execute() {
+		
+		global $wgRoadrulesSkinPanelAdminOnly;
+		
+		$this->user = $this->getSkin()->getUser();
 		
 		// Output HTML Page
 		$this->html( 'headelement' );
@@ -10,20 +16,42 @@ class RoadrulesTemplate extends BaseTemplate {
 		<!-- header -->
 		<?php $this->printHeader(); ?>
 		<!-- /header -->
+		
+		<?php if( $wgRoadrulesSkinPanelAdminOnly && ( !$this->user->isAnon && in_array('sysop', $this->user->getGroups())) ): ?>
 		<!-- admin panel -->
 		<?php $this->printPanel(); ?>
 		<!-- /admin panel -->
+		<?php endif; ?>
+		
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
 		
 		<div id="content" class="mw-body" role="main">
         <a id="top"></a>
         <div class="container">
 
-            <h1 id="firstHeading" class="firstHeading">Ontario Automobile Policy</h1>
-
+			<?php
+			// Loose comparison with '!=' is intentional, to catch null and false too, but not '0'
+			if ( $this->data['title'] != '' ) {
+			?>
+			<h1 id="firstHeading" class="firstHeading" lang="<?php $this->text( 'pageLanguage' ); ?>"><?php
+				 $this->html( 'title' )
+			?></h1>
+			<?php
+			} ?>
+			<?php $this->html( 'prebodyhtml' ) ?>
             <div id="bodyContent" class="mw-body-content">
 		
 			<!-- markup goes here -->
+			<?php
+				$this->html( 'bodycontent' );
+			?>
 			
+			<?php if ( $this->data['dataAfterContent'] ) {
+				$this->html( 'dataAfterContent' );
+			} ?>
+			
+			<?php $this->html( 'debughtml' ); ?>
 			</div>
 		</div>
 		
@@ -46,27 +74,11 @@ class RoadrulesTemplate extends BaseTemplate {
 	                <img src="img/logo_bottom.png" />
 	            </a>-->
 	            <ul class="footer-menu">
+	                <?php foreach($this->getMenuLinks('footer') as $link): ?>
 	                <li>
-	                    <a href="#">insurance policy</a>
+	                    <a href="<?php echo $link['href'] ?>"><?php echo $link['text'] ?></a>
 	                </li>
-	                <li>
-	                    <a href="#">fault rules</a>
-	                </li>
-	                <li>
-	                    <a href="#">tow-by-laws</a>
-	                </li>
-	                <li>
-	                    <a href="#">entire laws</a>
-	                </li>
-	                <li>
-	                    <a href="#">claim map</a>
-	                </li>
-	                <li>
-	                    <a href="#">claim start</a>
-	                </li>
-	                <li>
-	                    <a href="#">rates down</a>
-	                </li>
+	                <?php endforeach; ?>
 	            </ul>
 	        </div>
 	    </footer>
@@ -74,45 +86,47 @@ class RoadrulesTemplate extends BaseTemplate {
 	}
 	
 	private function printPanel() {
+		$nav = $this->data['content_navigation'];
+		$user = $this->data['personal_urls'];
+		echo "<!-- ".print_r($nav,1)." -->";
 		?>
 		<div id="actions-panel">
 	        <div class="container clearfix">
 	            <ul>
+	            	<?php foreach($nav as $link_type): ?>
+	            	<?php foreach($link_type as $key => $link): ?>
+	            	<?php if(in_array($key, array('main','view','talk'))) { ?>
+	            	<?php continue; } ?>
 	                <li>
-	                    <a href="#">
-	                        Edit
+	                    <a href="<?php echo $link['href']?>">
+	                        <?php echo $link['text'] ?>
 	                    </a>
 	                </li>
-	                <li>
-	                    <a href="#">
-	                        View History
-	                    </a>
-	                </li>
-	                <li>
-	                    <a href="#">
-	                        Delete
-	                    </a>
-	                </li>
-	                <li>
-	                    <a href="#">
-	                        Move
-	                    </a>
-	                </li>
-	                <li>
-	                    <a href="#">
-	                        Change Protection
-	                    </a>
-	                </li>
+	                <?php endforeach; ?>
+	                <?php endforeach; ?>
 	            </ul>
 	            <ul class="user-menu">
-	                <li>
-	                    Logged in as <b>Admin</b>
+	            	<?php if($this->user->isLoggedIn()): ?>
+	            	<li>
+	                    Logged in as <b><?php echo $this->user->getName() ?></b>
 	                </li>
 	                <li>
-	                    <a href="#">
-	                        Logout
-	                    </a>
+	                	<a href="<?php echo $user['logout']['href']?>">
+	                		Logout
+	                	</a>
 	                </li>
+	                <!-- remove all other user actions for now
+	                <?php endif; ?>
+	            	<?php foreach($user as $key => $link): ?>
+	            	<?php if(in_array($key, array('userpage'))) { ?>
+	            	<?php continue; } ?>
+	                <li>
+	                	<a href="<?php echo $link['href']?>">
+	                		<?php echo $link['text'] ?>
+	                	</a>
+	                </li>
+	                <?php endforeach; ?>
+	                -->
 	            </ul>
 	        </div>
 	    </div>
@@ -123,31 +137,15 @@ class RoadrulesTemplate extends BaseTemplate {
 		?>
 		<header>
 	        <div class="container clearfix">
-	            <a href="#" class="logo">
+	            <a href="<?php echo Title::newMainPage()->getFullUrl() ?>" class="logo">
 	                <img src="<?php echo $this->getSkin()->getSkinStylePath('assets/img/logo.png'); ?>" />
 	            </a>
 	            <ul class="header-menu">
+	            	<?php foreach($this->getMenuLinks('header') as $link): ?>
 	                <li>
-	                    <a href="#">insurance policy</a>
+	                    <a href="<?php echo $link['href'] ?>"><?php echo $link['text'] ?></a>
 	                </li>
-	                <li>
-	                    <a href="#">fault rules</a>
-	                </li>
-	                <li>
-	                    <a href="#">tow-by-laws</a>
-	                </li>
-	                <li>
-	                    <a href="#">entire laws</a>
-	                </li>
-	                <li>
-	                    <a href="#">claim map</a>
-	                </li>
-	                <li>
-	                    <a href="#">claim start</a>
-	                </li>
-	                <li>
-	                    <a href="#">rates down</a>
-	                </li>
+	                <?php endforeach; ?>
 	                <li class="header-menu-icon">
 	                    &#9776;
 	                </li>
@@ -155,6 +153,15 @@ class RoadrulesTemplate extends BaseTemplate {
 	        </div>
 	    </header>
 		<?php
+	}
+	
+	private function getMenuLinks( $menuName )
+	{
+		$sidebar = $this->data['sidebar'];
+		if( !array_key_exists($menuName, $sidebar) ) {
+			return array();
+		}
+		return $sidebar[$menuName];
 	}
 
 }

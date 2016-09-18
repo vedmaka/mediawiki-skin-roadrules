@@ -11,6 +11,9 @@
     "ValidSkinNames": {
         "roadrules": "Roadrules"
     },
+    "config": {
+        "RoadrulesSkinPanelAdminOnly": true
+    },
     "MessagesDirs": {
         "Roadrules": [
             "i18n"
