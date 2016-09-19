@@ -1,6 +1,9 @@
 .sub-heading-switch {
 	.sub-heading-title-text {
 		position: relative;
+		&:first-letter {
+			text-transform: capitalize;
+		}
 		ul.sub-heading-menu {
 			box-sizing: border-box;
 			display: none;
@@ -10,10 +13,12 @@
 			left: 0;
 			background-color: white;
 			width: 100%;
+			min-width: 400px;
 			padding: 15px 15px 15px 15px;
 			margin: 0;
 			box-shadow: 1px 1px 30px 5px rgba(0, 0, 0, 0.13);
 			li {
+				position: relative;
 				list-style: none;
 				line-height: 24px;
 				margin-bottom: 15px;
@@ -21,19 +26,25 @@
 					font-size: 22px;
 					font-weight: 400;
 					color: #505050;
+					display: block;
+					padding-left: 15px;
 					&:hover {
 						color: #45ac57;
+					}
+					text-transform: lowercase;
+					&:first-letter {
+						text-transform: capitalize;
 					}
 				}
 				&::before {
 					content: "";
-					display: inline-block;
+					display: block;
+					position: absolute;
 					width: 10px;
 					height: 18px;
 					background: url("../img/switch_sm.png") 0 0 no-repeat;
 					cursor: pointer;
-					position: relative;
-					margin-right: 4px;
+					top: 3px;
 				}
 			}
 		}

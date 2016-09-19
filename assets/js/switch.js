@@ -33,7 +33,11 @@
 		},
 
 		onClick: function(e) {
-			e.preventDefault();
+
+			// Allow transparent links click
+			if( e.target.tagName != "A" ) {
+				e.preventDefault();
+			}
 
 			if( $(this.element).hasClass('switch-open') ) {
 				this.closeSwitch();
