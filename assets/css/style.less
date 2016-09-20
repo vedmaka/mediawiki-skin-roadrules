@@ -229,12 +229,12 @@ footer {
 				display: none;
 			}
 
-			.infobox-right {
+			.infobox-roadrules {
 				float: right;
 				margin-left: 50px;
 				background-color: #d5e9d8;
 				width: 280px;
-				> h2 {
+				> .infobox-title {
 					font-size: 18px;
 					font-weight: 500;
 					text-transform: uppercase;
@@ -266,12 +266,15 @@ footer {
 					}
 					table {
 						margin: 0;
+						background-color: transparent;
+						width: ~'calc(100% - 2px)';
 						tr {
 							td {
 								padding: 6px 8px;
 								&:first-child {
 									font-weight: 500;
 									width: 80px;
+									color: #505050;
 								}
 							}
 						}
