@@ -413,6 +413,7 @@ footer {
 
 			table.wikitable {
 				/*width: 100%;*/
+				color: #505050;
 				border: 1px solid @colorGreen;
 				border-collapse: collapse;
 				margin: 20px 0;
@@ -448,25 +449,25 @@ footer {
 					}
 					&.color-gray {
 						background-color: #f2f2f2;
-						a {
+						a, .ref-clone-link {
 							color: gray;
 						}
 					}
 					&.color-red {
 						background-color: #ffdbdb;
-						a {
+						a, .ref-clone-link {
 							color: #ff0000;
 						}
 					}
 					&.color-yellow {
 						background-color: #fbf8db;
-						a {
+						a, .ref-clone-link {
 							color: #fda22a;
 						}
 					}
 					&.color-green {
 						background-color: #ebffee;
-						a {
+						a, .ref-clone-link {
 							//color: #e6cc42;
 						}
 					}
@@ -546,7 +547,7 @@ footer {
 					}
 					.cheatsheet-column-link {
 						margin-top: 25px;
-						a {
+						a, .ref-clone-link {
 							text-decoration: underline;
 							font-weight: bold;
 						}
