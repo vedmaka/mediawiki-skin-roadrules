@@ -17,6 +17,9 @@ a {
 a:visited {
 	color: @colorGreen;
 	text-decoration: none;
+	&.new {
+		color: #BA0000;
+	}
 }
 
 a:hover {
@@ -208,7 +211,13 @@ footer {
 
 		#bodyContent {
 
-			sup.reference:target
+			.ref-clone-link {
+				color: #45ac57;
+				text-decoration: underline;
+				cursor: pointer;
+			}
+
+			sup.reference:target, .ref-clone-link:target
 			{
 				background-color: rgb(203, 255, 221);
 			}
@@ -567,6 +576,10 @@ footer {
 				background-image: url("../img/references-open.png");
 			}
 
+			.skin-references ol.references {
+				display: none;
+			}
+
 			ol.references {
 				list-style: none;
 				margin: 0;
@@ -579,6 +592,10 @@ footer {
 					i {
 						font-style: normal;
 					}
+					span.reference-title {
+						font-weight: 500;
+						color: #45ac57;
+					}
 					/*&::before {
 						content: "^";
 						color: @colorGreen;
@@ -586,7 +603,7 @@ footer {
 						margin-right: 2px;
 					}*/
 				}
-				display: none;
+
 				&.references-collapse-open {
 					display: block;
 				}

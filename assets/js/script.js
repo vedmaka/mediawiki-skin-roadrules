@@ -1,17 +1,22 @@
 $(function(){
-	
+
+	// Flex-tables, unused
 	if( $('table.flex-table').length ) {
 		$('table.flex-table').flexTable();
 	}
 
+	// Collapse
 	if( $('.skin-collapsible').length ) {
 		$('.skin-collapsible').skinCollapsible();
 	}
 
+	// Title-switch
 	if( $('.skinSwitch').length ) {
 		$('.skinSwitch').skinSwitch();
 	}
 
+
+	// References collapse handling
 	if( $('#references-collapse').length ) {
 		$('#references-collapse').click(function(e){
 			e.preventDefault();
@@ -25,6 +30,7 @@ $(function(){
 		});
 	}
 
+	// Parser tags tooltips handling
 	if( $('.tooltip-link').length ) {
 		$('.tooltip-link').tooltipster({
 			theme: 'tooltipster-shadow',
@@ -54,7 +60,7 @@ $(function(){
 			content: 'Loading..',
 			// 'instance' is basically the tooltip. More details in the "Object-oriented Tooltipster" section.
 			functionBefore: function(instance, helper) {
-				console.log(helper.event.type);
+				//console.log(helper.event.type);
 				var $origin = $(helper.origin);
 				// we set a variable so the data is only loaded once via Ajax, not every time the tooltip opens
 				if ($origin.data('loaded') !== true) {
@@ -72,13 +78,13 @@ $(function(){
 		});
 	}
 
+	// Responsive header switch
 	$('.header-menu-icon').click(function(){
 		$(this).parent('ul').toggleClass('responsive-menu');
 	});
 
 	// Support reference click
 	if( $('sup.reference').length && $('#references-collapse').length ) {
-		console.log('bind');
 		$(document).on('click', 'sup.reference a', function() {
 			if( !$('#references-collapse').hasClass('references-collapse-open') ) {
 				$('#references-collapse').addClass('references-collapse-open');

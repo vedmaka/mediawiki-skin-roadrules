@@ -43,6 +43,7 @@
                 "assets/js/flex-table.js",
                 "assets/js/switch.js",
                 "assets/js/tooltipster.bundle.min.js",
+                "assets/js/cite-tooltips.js",
                 "assets/js/script.js"
             ]
         }
