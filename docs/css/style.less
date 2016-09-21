@@ -56,6 +56,9 @@ a:hover {
 						color: #6e4315;
 					}
 				}
+				a#action-edit {
+					font-weight: bold;
+				}
 				&::after {
 					content: "/";
 					color: #e18a2a;
@@ -117,14 +120,15 @@ header {
 			font-size: 14px;
 			margin-right: 8px;
 
-			/*			&:last-child {
-							margin-right: 0;
-						}*/
+/*			&:last-child {
+				margin-right: 0;
+			}*/
 
 			a {
 				font-weight: bold;
 				text-decoration: none;
 			}
+
 		}
 		li.header-menu-icon {
 			display: none;
@@ -169,9 +173,9 @@ footer {
 			font-size: 14px;
 			margin-right: 8px;
 
-			/*			&:last-child {
-							margin-right: 0;
-						}*/
+/*			&:last-child {
+				margin-right: 0;
+			}*/
 
 			a {
 				font-weight: bold;
@@ -203,6 +207,11 @@ footer {
 		}
 
 		#bodyContent {
+
+			sup.reference:target
+			{
+					background-color: rgb(203, 255, 221);
+			}
 
 			.mw-warning-with-logexcerpt {
 				margin-bottom: 8px;
@@ -242,14 +251,14 @@ footer {
 					background-color: #f2f2f2;
 				}
 				.infobox-picture {
-					overflow: hidden;
-					line-height: 0;
-					font-size: 0;
-					img {
-						display: block;
-						width: 100%;
+						overflow: hidden;
+						line-height: 0;
+						font-size: 0;
+						img {
+							display: block;
+							width: 100%;
+						}
 					}
-				}
 				.infobox-content {
 					padding: 0 0 12px 0;
 					img {
@@ -262,12 +271,15 @@ footer {
 					}
 					table {
 						margin: 0;
+						background-color: transparent;
+						width: ~'calc(100% - 2px)';
 						tr {
 							td {
 								padding: 6px 8px;
 								&:first-child {
 									font-weight: 500;
 									width: 80px;
+									color: #505050;
 								}
 							}
 						}
@@ -382,6 +394,7 @@ footer {
 				border: 1px solid @colorGreen;
 				border-collapse: collapse;
 				margin: 20px 0;
+				background-color: transparent;
 				th {
 					background-color: @colorGreen;
 					text-transform: uppercase;
@@ -541,19 +554,24 @@ footer {
 				background-image: url("../img/references-open.png");
 			}
 
-			ul.skin-references {
+			ol.references {
 				list-style: none;
 				margin: 0;
 				padding: 0;
 				li {
 					display: block;
 					margin-bottom: 15px;
-					&::before {
+					font-size: 15px;
+					font-style: normal;
+					i {
+						font-style: normal;
+					}
+					/*&::before {
 						content: "^";
 						color: @colorGreen;
 						display: inline-block;
 						margin-right: 2px;
-					}
+					}*/
 				}
 				display: none;
 				&.references-collapse-open {

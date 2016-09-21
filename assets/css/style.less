@@ -208,6 +208,15 @@ footer {
 
 		#bodyContent {
 
+			sup.reference:target
+			{
+					background-color: rgb(203, 255, 221);
+			}
+
+			sup.reference {
+				font-size: 15px;
+			}
+
 			.mw-warning-with-logexcerpt {
 				margin-bottom: 8px;
 			}
@@ -232,6 +241,7 @@ footer {
 			.infobox-roadrules {
 				float: right;
 				margin-left: 50px;
+				margin-bottom: 30px;
 				background-color: #d5e9d8;
 				width: 280px;
 				> .infobox-title {
@@ -355,7 +365,7 @@ footer {
 				font-weight: 400;
 			}
 
-			>h1 {
+			#mw-content-text>h1 {
 				margin: 30px 0;
 			}
 
@@ -389,6 +399,7 @@ footer {
 				border: 1px solid @colorGreen;
 				border-collapse: collapse;
 				margin: 20px 0;
+				background-color: transparent;
 				th {
 					background-color: @colorGreen;
 					text-transform: uppercase;
@@ -548,19 +559,24 @@ footer {
 				background-image: url("../img/references-open.png");
 			}
 
-			ul.skin-references {
+			ol.references {
 				list-style: none;
 				margin: 0;
 				padding: 0;
 				li {
 					display: block;
 					margin-bottom: 15px;
-					&::before {
+					font-size: 15px;
+					font-style: normal;
+					i {
+						font-style: normal;
+					}
+					/*&::before {
 						content: "^";
 						color: @colorGreen;
 						display: inline-block;
 						margin-right: 2px;
-					}
+					}*/
 				}
 				display: none;
 				&.references-collapse-open {

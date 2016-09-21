@@ -27,7 +27,7 @@
 
 		init: function() {
 
-			$(this.element).find('li > h1').click( this.onClick.bind(this) );
+			$(this.element).find('li > .collapsible-title').click( this.onClick.bind(this) );
 
 		},
 
