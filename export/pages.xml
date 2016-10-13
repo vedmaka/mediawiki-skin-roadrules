@@ -1,0 +1,1876 @@
+<mediawiki xmlns="http://www.mediawiki.org/xml/export-0.10/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mediawiki.org/xml/export-0.10/ http://www.mediawiki.org/xml/export-0.10.xsd" version="0.10" xml:lang="en">
+  <siteinfo>
+    <sitename>Rates Down - Road Rules</sitename>
+    <dbname>roadrules</dbname>
+    <base>http://roadrules.local/index.php/Main_Page</base>
+    <generator>MediaWiki 1.25.1</generator>
+    <case>first-letter</case>
+    <namespaces>
+      <namespace key="-2" case="first-letter">Media</namespace>
+      <namespace key="-1" case="first-letter">Special</namespace>
+      <namespace key="0" case="first-letter" />
+      <namespace key="1" case="first-letter">Talk</namespace>
+      <namespace key="2" case="first-letter">User</namespace>
+      <namespace key="3" case="first-letter">User talk</namespace>
+      <namespace key="4" case="first-letter">Rates Down - Road Rules</namespace>
+      <namespace key="5" case="first-letter">Rates Down - Road Rules talk</namespace>
+      <namespace key="6" case="first-letter">File</namespace>
+      <namespace key="7" case="first-letter">File talk</namespace>
+      <namespace key="8" case="first-letter">MediaWiki</namespace>
+      <namespace key="9" case="first-letter">MediaWiki talk</namespace>
+      <namespace key="10" case="first-letter">Template</namespace>
+      <namespace key="11" case="first-letter">Template talk</namespace>
+      <namespace key="12" case="first-letter">Help</namespace>
+      <namespace key="13" case="first-letter">Help talk</namespace>
+      <namespace key="14" case="first-letter">Category</namespace>
+      <namespace key="15" case="first-letter">Category talk</namespace>
+      <namespace key="102" case="first-letter">Property</namespace>
+      <namespace key="103" case="first-letter">Property talk</namespace>
+      <namespace key="108" case="first-letter">Concept</namespace>
+      <namespace key="109" case="first-letter">Concept talk</namespace>
+      <namespace key="828" case="first-letter">Module</namespace>
+      <namespace key="829" case="first-letter">Module talk</namespace>
+    </namespaces>
+  </siteinfo>
+  <page>
+    <title>Template:Homepage</title>
+    <ns>10</ns>
+    <id>2240</id>
+    <revision>
+      <id>19502</id>
+      <parentid>19499</parentid>
+      <timestamp>2016-09-18T21:48:15Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="823">&lt;noinclude&gt;
+This is the combined template for [[Main Page]] landing.
+It consists of set of other templates which can be used to customize or extend this layout.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{{Homepage_start}}
+{{Homepage_item
+|Title=Insurance​ Policy
+|Text=Insurance rules for all Ontario drivers repairs coverage, total loss, rental and more
+|Subtitle=Ontario
+|PageLink=Ontario_Automobile_Policy
+|Highlight=Yes
+}}{{Homepage_item
+|Title=FAULT RULES
+|Subtitle=Ontario
+|Image=Landing_1_sign.png
+|PageLink=Fault_Determination_Rules_Ontario
+}}{{Homepage_item
+|Title=TOW TRUCK BY-LAWS
+|Subtitle=Ontario
+|Image=Landing_1_truck.png
+|PageLink=Tow_Truck_By-Laws_(Ontario)
+}}{{Homepage_item
+|Title=READ FULL LAWS
+|Subtitle=Ontario
+|Image=Landing_1_book.png
+|PageLink=Auto_Insurance_Overview_(Ontario)
+}}
+{{Homepage_end}}
+&lt;/includeonly&gt;</text>
+      <sha1>nj7wrej1mh0xjsgse5hg7bjzbxphmpn</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Homepage start</title>
+    <ns>10</ns>
+    <id>2237</id>
+    <revision>
+      <id>19485</id>
+      <timestamp>2016-09-18T21:27:37Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;includeonly&gt;&lt;div class=&quot;landing_1_block&quot;&gt;&lt;/includeonly&gt;&quot;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="56">&lt;includeonly&gt;&lt;div class=&quot;landing_1_block&quot;&gt;&lt;/includeonly&gt;</text>
+      <sha1>3ed4o92rnyakzh77kf8t9c2rjqlbuqc</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Homepage end</title>
+    <ns>10</ns>
+    <id>2238</id>
+    <revision>
+      <id>19486</id>
+      <timestamp>2016-09-18T21:27:53Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;includeonly&gt;&lt;/div&gt;&lt;/includeonly&gt;&quot;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="33">&lt;includeonly&gt;&lt;/div&gt;&lt;/includeonly&gt;</text>
+      <sha1>iezx7hubcrm3s9w6zqkqnynfjcqdd99</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Homepage item</title>
+    <ns>10</ns>
+    <id>2239</id>
+    <revision>
+      <id>19492</id>
+      <parentid>19491</parentid>
+      <timestamp>2016-09-18T21:40:14Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="1079">&lt;noinclude&gt;
+This template represents item used in [[:Template:Homepage|Homepage]] to display grid block. Usage:
+&lt;pre&gt;&lt;nowiki&gt;
+{{Homepage_item
+|Image=Name_of_uploaded_image.png
+|Title=Title of this block
+|Subtitle=Subtitle of this block
+|Text=Text for this block ( if text is specified image will be excluded from block )
+|Highlight=Yes ( if set, highlights block with green borders )
+|PageLink=Name of page to be linked to
+}}
+&lt;/nowiki&gt;&lt;/pre&gt;
+&lt;/noinclude&gt;&lt;includeonly&gt;&lt;!--
+--&gt;&lt;div class=&quot;landing_1_block_item {{#if:{{{Highlight|}}}|landing_1_block_item--selected}}&quot;&gt;&lt;!--
+--&gt;{{#if:{{{PageLink|}}}|[[{{{PageLink}}}| ]]}}&lt;!--
+--&gt;&lt;div class=&quot;landing_1_block_item--content&quot;&gt;&lt;!--
+--&gt;&lt;div class=&quot;landing_1_block_item-text&quot;&gt;&lt;!--
+--&gt;{{#if:{{{Text|}}}|{{{Text}}}|{{#if:{{{Image|}}}|[[Image:{{{Image}}}|link=]]}}}}&lt;!--
+--&gt;&lt;/div&gt;&lt;!--
+--&gt;&lt;div class=&quot;landing_1_block_item-title&quot;&gt;&lt;!--
+--&gt;{{#if:{{{Title|}}}|{{{Title}}}}}&lt;!--
+--&gt;&lt;/div&gt;&lt;!--
+--&gt;&lt;div class=&quot;landing_1_block_item-subtitle&quot;&gt;&lt;!--
+--&gt;{{#if:{{{Subtitle|}}}|{{{Subtitle}}}}}&lt;!--
+--&gt;&lt;/div&gt;&lt;!--
+--&gt;&lt;/div&gt;&lt;!--
+--&gt;&lt;/div&gt;&lt;!--
+--&gt;&lt;/includeonly&gt;</text>
+      <sha1>cyw8w00a7rjjvf9umz1i4rah78k41c2</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:FDR</title>
+    <ns>10</ns>
+    <id>2244</id>
+    <revision>
+      <id>19597</id>
+      <parentid>19552</parentid>
+      <timestamp>2016-09-19T19:16:20Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="389">&lt;noinclude&gt;
+This template renders Fault Determination Rules grid. It contains FDR_item template calls.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{{#ask: [[Category:FDR scope]]
+|?=PageTitle
+|?ScopeImage=Image
+|?ScopeTitle=Title
+|?ScopeSort
+|format=template
+|template=FDR_item
+|named args=yes
+|link=none
+|limit=100
+|introtemplate=FDR_start
+|outrotemplate=FDR_end
+|sort=ScopeSort
+|order=asc
+}}
+&lt;/includeonly&gt;</text>
+      <sha1>72ztsqfrtpa8uirm63sjwhrd1lr2osf</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:FDR start</title>
+    <ns>10</ns>
+    <id>2245</id>
+    <revision>
+      <id>19506</id>
+      <timestamp>2016-09-19T16:53:55Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;includeonly&gt;&lt;div class=&quot;landing_2_block&quot;&gt;&lt;/includeonly&gt;&quot;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="56">&lt;includeonly&gt;&lt;div class=&quot;landing_2_block&quot;&gt;&lt;/includeonly&gt;</text>
+      <sha1>rkjjglm5ba32u28r46qv1tpsqmqnuc0</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:FDR item</title>
+    <ns>10</ns>
+    <id>2247</id>
+    <revision>
+      <id>19551</id>
+      <parentid>19508</parentid>
+      <timestamp>2016-09-19T18:51:35Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="437">&lt;noinclude&gt;
+This template renders single FDR item in grid.
+&lt;/noinclude&gt;&lt;includeonly&gt;&lt;!--
+--&gt;&lt;div class=&quot;landing_2_block_item&quot;&gt;&lt;!--
+--&gt;[[{{{?PageTitle}}}| ]]&lt;!--
+--&gt;&lt;div class=&quot;landing_2_block_item-content&quot;&gt;&lt;!--
+--&gt;&lt;div class=&quot;landing_2_block_item--image&quot;&gt;&lt;!--
+--&gt;[[Image:{{{?Image}}}|link=]]&lt;!--
+--&gt;&lt;/div&gt;&lt;!--
+--&gt;&lt;div class=&quot;landing_2_block_item--text&quot;&gt;&lt;!--
+--&gt;{{{?Title}}}&lt;!--
+--&gt;&lt;/div&gt;&lt;!--
+--&gt;&lt;/div&gt;&lt;!--
+--&gt;&lt;/div&gt;&lt;!--
+--&gt;&lt;/includeonly&gt;</text>
+      <sha1>q91a1kbr39dp1ijl5tp1fz8woel5wph</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:FDR end</title>
+    <ns>10</ns>
+    <id>2246</id>
+    <revision>
+      <id>19507</id>
+      <timestamp>2016-09-19T16:54:10Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;includeonly&gt;&lt;/div&gt;&lt;/includeonly&gt;&quot;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="33">&lt;includeonly&gt;&lt;/div&gt;&lt;/includeonly&gt;</text>
+      <sha1>iezx7hubcrm3s9w6zqkqnynfjcqdd99</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Cheatsheet</title>
+    <ns>10</ns>
+    <id>2272</id>
+    <revision>
+      <id>19596</id>
+      <parentid>19578</parentid>
+      <timestamp>2016-09-19T19:15:36Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="409">&lt;noinclude&gt;
+This template renders Cheatsheet grid. It contains Cheatsheet_item template calls.
+&lt;/noinclude&gt;&lt;includeonly&gt;
+{{#ask: [[Category:Cheatsheet scope]]
+|?=PageTitle
+|?ScopeImage=Image
+|?ScopeTitle=Title
+|?ScopeSort
+|format=template
+|template=Cheatsheet_item
+|named args=yes
+|link=none
+|limit=100
+|introtemplate=Cheatsheet_start
+|outrotemplate=Cheatsheet_end
+|sort=ScopeSort
+|order=asc
+}}
+&lt;/includeonly&gt;</text>
+      <sha1>arj7nqdomwyr0xr3fgocvfias1nrxoz</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Cheatsheet start</title>
+    <ns>10</ns>
+    <id>2273</id>
+    <revision>
+      <id>19536</id>
+      <timestamp>2016-09-19T17:33:46Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;includeonly&gt;&lt;div class=&quot;landing_3_block&quot;&gt;&lt;/includeonly&gt;&quot;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="56">&lt;includeonly&gt;&lt;div class=&quot;landing_3_block&quot;&gt;&lt;/includeonly&gt;</text>
+      <sha1>do1hv5bnz2san5lr8xgtg25nxtysis9</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Cheatsheet item</title>
+    <ns>10</ns>
+    <id>2275</id>
+    <revision>
+      <id>19563</id>
+      <parentid>19538</parentid>
+      <timestamp>2016-09-19T19:00:00Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="366">&lt;includeonly&gt;&lt;!--
+--&gt;&lt;div class=&quot;landing_3_block_item&quot;&gt;&lt;!--
+--&gt;[[{{{?PageTitle}}}| ]]&lt;!--
+--&gt;&lt;div class=&quot;landing_3_block_item-content&quot;&gt;&lt;!--
+--&gt;&lt;div class=&quot;landing_3_block_item--image&quot;&gt;&lt;!--
+--&gt;[[Image:{{{?Image}}}|link=]]&lt;!--
+--&gt;&lt;/div&gt;&lt;!--
+--&gt;&lt;div class=&quot;landing_3_block_item--text&quot;&gt;&lt;!--
+--&gt;{{{?Title}}}&lt;!--
+--&gt;&lt;/div&gt;&lt;!--
+--&gt;&lt;/div&gt;&lt;!--
+--&gt;&lt;/div&gt;&lt;!--
+--&gt;&lt;/includeonly&gt;</text>
+      <sha1>0zpft2vqfa8ote24jqdh90mgzdmw7kk</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Cheatsheet end</title>
+    <ns>10</ns>
+    <id>2274</id>
+    <revision>
+      <id>19537</id>
+      <timestamp>2016-09-19T17:34:01Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;includeonly&gt;&lt;/div&gt;&lt;/includeonly&gt;&quot;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="33">&lt;includeonly&gt;&lt;/div&gt;&lt;/includeonly&gt;</text>
+      <sha1>iezx7hubcrm3s9w6zqkqnynfjcqdd99</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:NavigationDropdown</title>
+    <ns>10</ns>
+    <id>2307</id>
+    <revision>
+      <id>19613</id>
+      <parentid>19608</parentid>
+      <timestamp>2016-09-19T20:00:41Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="468">&lt;noinclude&gt;
+This template renders navigation dropdown for pages like cheatsheet or FDR.
+&lt;/noinclude&gt;&lt;includeonly&gt;&lt;!--
+--&gt;{{#ask: [[Category:{{{Category}}}]] [[ScopeTitle::!{{#show:{{PAGENAME}}|?ScopeTitle}}]]
+|?=_title
+|?ScopeSort
+|?ScopeTitle
+|link=none
+|named args=yes
+|format=template
+|template=NavigationDropdown_item
+|introtemplate=NavigationDropdown_start
+|limit=100
+|sort=ScopeTitle
+|order=asc
+}}{{NavigationDropdown_end|Text={{{Text|}}}}}&lt;!--
+--&gt;&lt;/includeonly&gt;</text>
+      <sha1>ktdlq87ldfcj4ocz14boyvz1tk0vibi</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:NavigationDropdown start</title>
+    <ns>10</ns>
+    <id>2305</id>
+    <revision>
+      <id>19612</id>
+      <parentid>19606</parentid>
+      <timestamp>2016-09-19T19:59:08Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="242">&lt;includeonly&gt;&lt;!--
+--&gt; &lt;div class=&quot;sub-heading-switch skinSwitch&quot;&gt;&lt;!--
+--&gt;&lt;div class=&quot;sub-heading-title&quot;&gt;&lt;!--
+--&gt;&lt;span class=&quot;sub-heading-title-text&quot;&gt;{{#show:{{PAGENAME}}|?ScopeTitle}}&lt;!--
+--&gt;&lt;ul class=&quot;sub-heading-menu&quot;&gt;&lt;!--
+--&gt;&lt;/includeonly&gt;</text>
+      <sha1>ktist0ig2c8olidmzifkrgb8dmloqgv</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:NavigationDropdown item</title>
+    <ns>10</ns>
+    <id>2308</id>
+    <revision>
+      <id>19610</id>
+      <parentid>19609</parentid>
+      <timestamp>2016-09-19T19:57:19Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="71">&lt;includeonly&gt;&lt;li&gt;[[{{{?_title}}}|{{{?ScopeTitle}}}]]&lt;/li&gt;&lt;/includeonly&gt;</text>
+      <sha1>dq9wsr6b393drxxqtg5njqqbixmu8on</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:NavigationDropdown end</title>
+    <ns>10</ns>
+    <id>2306</id>
+    <revision>
+      <id>19607</id>
+      <timestamp>2016-09-19T19:55:50Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;includeonly&gt;&lt;!-- --&gt;&lt;/ul&gt;&lt;!-- --&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;sub-heading-text&quot;&gt;{{{Text}}}&lt;/div&gt;&lt;/div&gt;&lt;!-- --&gt;&lt;/includeonly&gt;&quot;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="121">&lt;includeonly&gt;&lt;!--
+--&gt;&lt;/ul&gt;&lt;!--
+--&gt;&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;sub-heading-text&quot;&gt;{{{Text}}}&lt;/div&gt;&lt;/div&gt;&lt;!--
+--&gt;&lt;/includeonly&gt;</text>
+      <sha1>57lvqmz70dvplzr99fj8m07k9kp6w5d</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Infobox roadrules</title>
+    <ns>10</ns>
+    <id>2309</id>
+    <revision>
+      <id>19639</id>
+      <parentid>19635</parentid>
+      <timestamp>2016-09-20T22:35:35Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="295">&lt;includeonly&gt;&lt;!--
+--&gt;&lt;div class=&quot;infobox-roadrules&quot;&gt;&lt;!--
+--&gt;&lt;div class=&quot;infobox-title&quot;&gt;{{{title|}}}&lt;/div&gt;&lt;!--
+--&gt;{{#if:{{{image|}}}|&lt;div class=&quot;infobox-picture&quot;&gt;[[Image:{{{image}}}|280px|link=]]&lt;/div&gt;}}&lt;!--
+--&gt;&lt;div class=&quot;infobox-content&quot;&gt;{{{content|}}}&lt;/div&gt;&lt;!--
+--&gt;&lt;/div&gt;&lt;!--
+--&gt;&lt;/includeonly&gt;</text>
+      <sha1>b56azyuxwdllf20moyw7k8ttbsu2zzy</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Reflist</title>
+    <ns>10</ns>
+    <id>66</id>
+    <revision>
+      <id>19648</id>
+      <parentid>19647</parentid>
+      <timestamp>2016-09-20T22:57:42Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="985">{{#if:{{{group|}}}||&lt;h1&gt;{{#if:{{{title|}}}|{{{title}}}|References}}&lt;span id=&quot;references-collapse&quot; class=&quot;&quot;&gt;&lt;/span&gt; &lt;/h1&gt;}}&lt;!--
+--&gt;&lt;div class=&quot;reflist {{#if:{{{group|}}}||skin-references}} &lt;!--
+ --&gt;{{#if: {{{1|}}}
+    | columns {{#iferror: {{#ifexpr: {{{1|1}}} &gt; 1 }}
+      | references-column-width 
+      | references-column-count references-column-count-{{#if:1|{{{1}}}}} }}
+    | {{#if: {{{colwidth|}}}
+      | references-column-width }} }}&quot; style=&quot;&lt;!--
+ --&gt;{{#if: {{{1|}}}
+    | {{#iferror: {{#ifexpr: {{{1|1}}} &gt; 1 }}
+      | {{column-width|{{#if:1|{{{1}}}}}}}
+      | {{column-count|{{#if:1|{{{1}}}}}}} }}
+    | {{#if: {{{colwidth|}}}
+      | {{column-width|{{{colwidth}}}}} }} }} list-style-type: &lt;!--
+ --&gt;{{{liststyle|{{#switch: {{{group|}}}
+    | upper-alpha
+    | upper-roman
+    | lower-alpha
+    | lower-greek
+    | lower-roman = {{{group}}}
+    | #default = decimal}}}}};&quot;&gt;
+{{#tag:references|{{{refs|}}}|group={{{group|}}}}}&lt;/div&gt;&lt;noinclude&gt;
+{{Documentation}}
+&lt;/noinclude&gt;</text>
+      <sha1>n5ebwsehupee7kqcr3z1ol5h4hmfze0</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Collapsible start</title>
+    <ns>10</ns>
+    <id>2312</id>
+    <revision>
+      <id>19664</id>
+      <timestamp>2016-09-20T23:25:10Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;includeonly&gt;&lt;!-- --&gt;&lt;ul class=&quot;skin-collapsible&quot;&gt;&lt;!-- --&gt;&lt;/includeonly&gt;&quot;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="72">&lt;includeonly&gt;&lt;!--
+--&gt;&lt;ul class=&quot;skin-collapsible&quot;&gt;&lt;!--
+--&gt;&lt;/includeonly&gt;</text>
+      <sha1>javnxcj67omchf02s5b6w1tr4fdl9p1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Collapsible item</title>
+    <ns>10</ns>
+    <id>2314</id>
+    <revision>
+      <id>19666</id>
+      <timestamp>2016-09-20T23:27:49Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;includeonly&gt;&lt;!-- --&gt;&lt;li&gt;&lt;!-- --&gt;&lt;div class=&quot;collapsible-title&quot;&gt;{{{title}}}&lt;/div&gt;&lt;!-- --&gt;&lt;p&gt;{{{text}}}&lt;/p&gt;&lt;!-- --&gt;&lt;/li&gt;&lt;!-- --&gt;&lt;/includeonly&gt;&quot;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="141">&lt;includeonly&gt;&lt;!--
+--&gt;&lt;li&gt;&lt;!--
+--&gt;&lt;div class=&quot;collapsible-title&quot;&gt;{{{title}}}&lt;/div&gt;&lt;!--
+--&gt;&lt;p&gt;{{{text}}}&lt;/p&gt;&lt;!--
+--&gt;&lt;/li&gt;&lt;!--
+--&gt;&lt;/includeonly&gt;</text>
+      <sha1>6bexr24yr81zrri76hn9rgny5gq4xt2</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Collapsible end</title>
+    <ns>10</ns>
+    <id>2313</id>
+    <revision>
+      <id>19665</id>
+      <timestamp>2016-09-20T23:25:30Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;includeonly&gt;&lt;!-- --&gt;&lt;/ul&gt;&lt;!-- --&gt;&lt;/includeonly&gt;&quot;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="48">&lt;includeonly&gt;&lt;!--
+--&gt;&lt;/ul&gt;&lt;!--
+--&gt;&lt;/includeonly&gt;</text>
+      <sha1>2sen1dph3yibq7pkbbn9h83s4i7o97l</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Reflink</title>
+    <ns>10</ns>
+    <id>2317</id>
+    <revision>
+      <id>19685</id>
+      <parentid>19682</parentid>
+      <timestamp>2016-09-21T12:07:59Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="231">&lt;includeonly&gt;{{#if:{{{linktext|}}}|&lt;span class=&quot;ref-clone-link&quot;&gt;{{{linktext}}}&lt;/span&gt;&lt;span style=&quot;display: none;&quot;&gt;}}{{#tag:ref|{{#if:{{{title|}}}|{{Reftitle|{{{title}}}}}|}}{{{text}}}}}&gt;{{#if:{{{linktext|}}}|&lt;/span&gt;}}&lt;/includeonly&gt;</text>
+      <sha1>8yebzt96guiyca3uvvrdgixizlyi4eb</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Reftitle</title>
+    <ns>10</ns>
+    <id>2316</id>
+    <revision>
+      <id>19684</id>
+      <parentid>19681</parentid>
+      <timestamp>2016-09-21T12:02:24Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="78">&lt;includeonly&gt;&lt;span class=&quot;reference-title&quot;&gt;{{{1}}}&lt;/span&gt; &amp;nbsp;&lt;/includeonly&gt;</text>
+      <sha1>0fv1xqg5efha4qhlzgwbusimvp45av2</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Columns start</title>
+    <ns>10</ns>
+    <id>2318</id>
+    <revision>
+      <id>19696</id>
+      <timestamp>2016-09-21T12:44:19Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;includeonly&gt;&lt;!-- --&gt;{{#if:{{{title|}}}|&lt;div class=&quot;table-title&quot;&gt;{{{title}}}&lt;/div&gt;}}&lt;!-- --&gt;{{#if:{{{text|}}}|&lt;div class=&quot;table-description&quot;&gt;{{{text}}}&lt;/div&gt;}}&lt;!-- --&gt;&lt;div cla...&quot;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="229">&lt;includeonly&gt;&lt;!--
+--&gt;{{#if:{{{title|}}}|&lt;div class=&quot;table-title&quot;&gt;{{{title}}}&lt;/div&gt;}}&lt;!--
+--&gt;{{#if:{{{text|}}}|&lt;div class=&quot;table-description&quot;&gt;{{{text}}}&lt;/div&gt;}}&lt;!--
+--&gt;&lt;div class=&quot;cheatsheet-columns-wrapper&quot;&gt;&lt;!--
+--&gt;&lt;/includeonly&gt;</text>
+      <sha1>2m4v9mdw1rk5n9tdv66ab6hr8wmaaa3</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Columns item</title>
+    <ns>10</ns>
+    <id>2320</id>
+    <revision>
+      <id>19700</id>
+      <parentid>19698</parentid>
+      <timestamp>2016-09-21T12:50:38Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="293">&lt;includeonly&gt;&lt;!--
+--&gt;&lt;div class=&quot;column&quot;&gt;&lt;!--
+--&gt;&lt;div class=&quot;cheatsheet-column-image&quot;&gt;&lt;!--
+--&gt;[[Image:{{{image}}}|link=]]&lt;!--
+--&gt;&lt;/div&gt;&lt;!--
+--&gt;&lt;div class=&quot;cheatsheet-column-link&quot;&gt;{{{link|}}}&lt;/div&gt;&lt;!--
+--&gt;&lt;div class=&quot;cheatsheet-column-text&quot;&gt;{{{text|}}}&lt;/div&gt;&lt;!--
+--&gt;&lt;/div&gt;&lt;!--
+--&gt;&lt;/includeonly&gt;</text>
+      <sha1>6x9lbpv41pavnia0t4udp0qmyvoxdm7</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Template:Columns end</title>
+    <ns>10</ns>
+    <id>2319</id>
+    <revision>
+      <id>19697</id>
+      <timestamp>2016-09-21T12:44:55Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;includeonly&gt;&lt;/div&gt;&lt;/includeonly&gt;&quot;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="33">&lt;includeonly&gt;&lt;/div&gt;&lt;/includeonly&gt;</text>
+      <sha1>iezx7hubcrm3s9w6zqkqnynfjcqdd99</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:ScopeTitle</title>
+    <ns>102</ns>
+    <id>2278</id>
+    <revision>
+      <id>19546</id>
+      <timestamp>2016-09-19T18:39:09Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <comment>Created page with &quot;[[has type::Text]]&quot;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="18">[[has type::Text]]</text>
+      <sha1>ge8r9las11sad43o3xs8lz3f4587frx</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:ScopeImage</title>
+    <ns>102</ns>
+    <id>2279</id>
+    <revision>
+      <id>19547</id>
+      <timestamp>2016-09-19T18:39:18Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <comment>Created page with &quot;[[has type::Text]]&quot;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="18">[[has type::Text]]</text>
+      <sha1>ge8r9las11sad43o3xs8lz3f4587frx</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Property:ScopeSort</title>
+    <ns>102</ns>
+    <id>2304</id>
+    <revision>
+      <id>19579</id>
+      <timestamp>2016-09-19T19:08:33Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <comment>Created page with &quot;[[has type::Number]]&quot;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="20">[[has type::Number]]</text>
+      <sha1>94fvly710thk8l91dxjg6mibbdz6bkg</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>FDR</title>
+    <ns>0</ns>
+    <id>2277</id>
+    <revision>
+      <id>19545</id>
+      <parentid>19544</parentid>
+      <timestamp>2016-09-19T18:04:29Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <minor/>
+      <comment>Admin1 moved page [[FDA]] to [[FDR]] without leaving a redirect</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="97">What rules cause your crash to happen?
+{{DISPLAYTITLE:Ontario Fault Determination Rules}}
+{{FDR}}</text>
+      <sha1>dtj9z82eodr9ushagm9l5dtl50654vd</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>FDR page 1</title>
+    <ns>0</ns>
+    <id>2280</id>
+    <revision>
+      <id>19611</id>
+      <parentid>19598</parentid>
+      <timestamp>2016-09-19T19:58:27Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="806">This is sample FDR page 1, it is aggregated on [[FDR]] page.
+Please see page source for example of makeup which defines it.
+
+&lt;!-- Call 'NavigationDropdown' template to render navigation dropdown --&gt;
+{{NavigationDropdown
+|Category=FDR scope
+|Text=Commonly called “No Fault insurance”, this insurance covers drivers physical damage to vehicles, trailers, contents, and rental for qualifying accidents
+}}
+
+&lt;!-- Set image filename to be used at aggregation display --&gt;
+{{#set:ScopeImage=landing_2_icon_1.png}}
+&lt;!-- Set title to be used at aggregation display --&gt;
+{{#set:ScopeTitle=same direction and lane near end}}
+&lt;!-- Set page sorting for aggregation display, lower numbers push page to top --&gt;
+{{#set:ScopeSort=1}}
+&lt;!-- Indicate that this page belongs to &quot;FDR scope&quot; category --&gt;
+[[Category:FDR scope]]</text>
+      <sha1>2u8zkkyvru9t8hy58zxlwdmvu0qy5zq</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>FDR page 2</title>
+    <ns>0</ns>
+    <id>2281</id>
+    <revision>
+      <id>19615</id>
+      <parentid>19599</parentid>
+      <timestamp>2016-09-19T20:13:38Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="800">This is sample FDR page 2, it is aggregated on [[FDR]] page.
+Please see page source for example of makeup which defines it.
+
+&lt;!-- Call 'NavigationDropdown' template to render navigation dropdown --&gt;
+{{NavigationDropdown
+|Category=FDR scope
+|Text=Commonly called “No Fault insurance”, this insurance covers drivers physical damage to vehicles, trailers, contents, and rental for qualifying accidents
+}}
+
+&lt;!-- Set image filename to be used at aggregation display --&gt;
+{{#set:ScopeImage=landing_2_icon_2.png}}
+&lt;!-- Set title to be used at aggregation display --&gt;
+{{#set:ScopeTitle=same direction side / side}}
+&lt;!-- Set page sorting for aggregation display, lower numbers push page to top --&gt;
+{{#set:ScopeSort=2}}
+&lt;!-- Indicate that this page belongs to &quot;FDR scope&quot; category --&gt;
+[[Category:FDR scope]]</text>
+      <sha1>a8ua16d63vreo5xifqz4nx4g04x261j</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>FDR page 3</title>
+    <ns>0</ns>
+    <id>2282</id>
+    <revision>
+      <id>19616</id>
+      <parentid>19600</parentid>
+      <timestamp>2016-09-19T20:14:10Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="824">This is sample FDR page 3, it is aggregated on [[FDR]] page.
+Please see page source for example of makeup which defines it.
+
+&lt;!-- Call 'NavigationDropdown' template to render navigation dropdown --&gt;
+{{NavigationDropdown
+|Category=FDR scope
+|Text=Commonly called “No Fault insurance”, this insurance covers drivers physical damage to vehicles, trailers, contents, and rental for qualifying accidents
+}}
+
+&lt;!-- Set image filename to be used at aggregation display --&gt;
+{{#set:ScopeImage=landing_2_icon_3.png}}
+&lt;!-- Set title to be used at aggregation display --&gt;
+{{#set:ScopeTitle=opposite direction, towards each other side swipes}}
+&lt;!-- Set page sorting for aggregation display, lower numbers push page to top --&gt;
+{{#set:ScopeSort=3}}
+&lt;!-- Indicate that this page belongs to &quot;FDR scope&quot; category --&gt;
+[[Category:FDR scope]]</text>
+      <sha1>ausvqy3jah3n12kwljk4iocbqsw05cl</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>FDR page 4</title>
+    <ns>0</ns>
+    <id>2283</id>
+    <revision>
+      <id>19617</id>
+      <parentid>19601</parentid>
+      <timestamp>2016-09-19T20:14:42Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="786">This is sample FDR page 4, it is aggregated on [[FDR]] page.
+Please see page source for example of makeup which defines it.
+
+&lt;!-- Call 'NavigationDropdown' template to render navigation dropdown --&gt;
+{{NavigationDropdown
+|Category=FDR scope
+|Text=Commonly called “No Fault insurance”, this insurance covers drivers physical damage to vehicles, trailers, contents, and rental for qualifying accidents
+}}
+
+&lt;!-- Set image filename to be used at aggregation display --&gt;
+{{#set:ScopeImage=landing_2_icon_4.png}}
+&lt;!-- Set title to be used at aggregation display --&gt;
+{{#set:ScopeTitle=intersection}}
+&lt;!-- Set page sorting for aggregation display, lower numbers push page to top --&gt;
+{{#set:ScopeSort=4}}
+&lt;!-- Indicate that this page belongs to &quot;FDR scope&quot; category --&gt;
+[[Category:FDR scope]]</text>
+      <sha1>p9zzenn915gdm1cn5vtcpec0b907v5p</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>FDR page 5</title>
+    <ns>0</ns>
+    <id>2284</id>
+    <revision>
+      <id>19618</id>
+      <parentid>19602</parentid>
+      <timestamp>2016-09-19T20:15:16Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="786">This is sample FDR page 5, it is aggregated on [[FDR]] page.
+Please see page source for example of makeup which defines it.
+
+&lt;!-- Call 'NavigationDropdown' template to render navigation dropdown --&gt;
+{{NavigationDropdown
+|Category=FDR scope
+|Text=Commonly called “No Fault insurance”, this insurance covers drivers physical damage to vehicles, trailers, contents, and rental for qualifying accidents
+}}
+
+&lt;!-- Set image filename to be used at aggregation display --&gt;
+{{#set:ScopeImage=landing_2_icon_5.png}}
+&lt;!-- Set title to be used at aggregation display --&gt;
+{{#set:ScopeTitle=parking lots}}
+&lt;!-- Set page sorting for aggregation display, lower numbers push page to top --&gt;
+{{#set:ScopeSort=5}}
+&lt;!-- Indicate that this page belongs to &quot;FDR scope&quot; category --&gt;
+[[Category:FDR scope]]</text>
+      <sha1>fdyxkev6oj28ssr2bafanl52f6afb1m</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>FDR page 6</title>
+    <ns>0</ns>
+    <id>2285</id>
+    <revision>
+      <id>19619</id>
+      <parentid>19603</parentid>
+      <timestamp>2016-09-19T20:15:50Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="787">This is sample FDR page 6, it is aggregated on [[FDR]] page.
+Please see page source for example of makeup which defines it.
+
+&lt;!-- Call 'NavigationDropdown' template to render navigation dropdown --&gt;
+{{NavigationDropdown
+|Category=FDR scope
+|Text=Commonly called “No Fault insurance”, this insurance covers drivers physical damage to vehicles, trailers, contents, and rental for qualifying accidents
+}}
+
+&lt;!-- Set image filename to be used at aggregation display --&gt;
+{{#set:ScopeImage=landing_2_icon_6.png}}
+&lt;!-- Set title to be used at aggregation display --&gt;
+{{#set:ScopeTitle=going reverse}}
+&lt;!-- Set page sorting for aggregation display, lower numbers push page to top --&gt;
+{{#set:ScopeSort=6}}
+&lt;!-- Indicate that this page belongs to &quot;FDR scope&quot; category --&gt;
+[[Category:FDR scope]]</text>
+      <sha1>61fon6u2j4sss37uw203t0xae84zyfp</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>FDR page 7</title>
+    <ns>0</ns>
+    <id>2286</id>
+    <revision>
+      <id>19620</id>
+      <parentid>19604</parentid>
+      <timestamp>2016-09-19T20:17:01Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="784">This is sample FDR page 7, it is aggregated on [[FDR]] page.
+Please see page source for example of makeup which defines it.
+
+&lt;!-- Call 'NavigationDropdown' template to render navigation dropdown --&gt;
+{{NavigationDropdown
+|Category=FDR scope
+|Text=Commonly called “No Fault insurance”, this insurance covers drivers physical damage to vehicles, trailers, contents, and rental for qualifying accidents
+}}
+
+&lt;!-- Set image filename to be used at aggregation display --&gt;
+{{#set:ScopeImage=landing_2_icon_7.png}}
+&lt;!-- Set title to be used at aggregation display --&gt;
+{{#set:ScopeTitle=parked car}}
+&lt;!-- Set page sorting for aggregation display, lower numbers push page to top --&gt;
+{{#set:ScopeSort=7}}
+&lt;!-- Indicate that this page belongs to &quot;FDR scope&quot; category --&gt;
+[[Category:FDR scope]]</text>
+      <sha1>15zqxhirfmseie6sylkz8ro9pte9qm6</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>FDR page 8</title>
+    <ns>0</ns>
+    <id>2287</id>
+    <revision>
+      <id>19621</id>
+      <parentid>19605</parentid>
+      <timestamp>2016-09-19T20:17:30Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="786">This is sample FDR page 8, it is aggregated on [[FDR]] page.
+Please see page source for example of makeup which defines it.
+
+&lt;!-- Call 'NavigationDropdown' template to render navigation dropdown --&gt;
+{{NavigationDropdown
+|Category=FDR scope
+|Text=Commonly called “No Fault insurance”, this insurance covers drivers physical damage to vehicles, trailers, contents, and rental for qualifying accidents
+}}
+
+&lt;!-- Set image filename to be used at aggregation display --&gt;
+{{#set:ScopeImage=landing_2_icon_8.png}}
+&lt;!-- Set title to be used at aggregation display --&gt;
+{{#set:ScopeTitle=turning left}}
+&lt;!-- Set page sorting for aggregation display, lower numbers push page to top --&gt;
+{{#set:ScopeSort=8}}
+&lt;!-- Indicate that this page belongs to &quot;FDR scope&quot; category --&gt;
+[[Category:FDR scope]]</text>
+      <sha1>rrjcouqdqfevee1963do8fujxbwhdmz</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Cheatsheet</title>
+    <ns>0</ns>
+    <id>2276</id>
+    <revision>
+      <id>19542</id>
+      <timestamp>2016-09-19T18:02:35Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <comment>Created page with &quot;Find your category {{DISPLAYTITLE:Ontario Automobile Policy Cheat Sheet}} {{Cheatsheet}}&quot;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="88">Find your category
+{{DISPLAYTITLE:Ontario Automobile Policy Cheat Sheet}}
+{{Cheatsheet}}</text>
+      <sha1>k5yhxjddpphf0gjiuzho1ropdqs1tuz</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Cheatsheet page 1</title>
+    <ns>0</ns>
+    <id>2288</id>
+    <revision>
+      <id>19695</id>
+      <parentid>19694</parentid>
+      <timestamp>2016-09-21T12:41:06Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="6038">This is sample Cheatsheet page 1, it is aggregated on [[Cheatsheet]] page.
+Please see page source for example of markup which defines it.
+
+&lt;!-- Call 'NavigationDropdown' template to render navigation dropdown --&gt;
+{{NavigationDropdown
+|Category=Cheatsheet scope
+|Text=Commonly called “No Fault insurance”, this insurance covers drivers physical damage to vehicles, trailers, contents, and rental for qualifying accidents
+}}
+
+&lt;!-- Set image filename to be used at aggregation display --&gt;
+{{#set:ScopeImage=landing_3_icon_1.png}}
+&lt;!-- Set title to be used at aggregation display --&gt;
+{{#set:ScopeTitle=policy requirements}}
+&lt;!-- Set page sorting for aggregation display, lower numbers push page to top --&gt;
+{{#set:ScopeSort=1}}
+&lt;!-- Indicate that this page belongs to &quot;Cheatsheet scope&quot; category --&gt;
+[[Category:Cheatsheet scope]]
+
+&lt;!-- Below you can see sample markup for cheatsheet page layout --&gt;
+&lt;div class=&quot;table-title&quot;&gt;cheat sheet&lt;/div&gt;
+
+{|class=&quot;wikitable&quot;
+!style=&quot;width: 50%&quot; class=&quot;text-left&quot; | Event
+! no fault
+! collision
+! comprehensive
+! all perils
+! specified perils
+! uninsured motors
+|-
+| Car accident (at fault)
+|class=&quot;color-gray text-center&quot; | No
+|class=&quot;color-red text-center&quot; | {{Reflink|linktext=Yes|title=[[OAP 1.S. 7.1.2.d]]|text=All perils - this option combines the coverage of Collision or Upset and Comprehensive}}
+|class=&quot;color-red text-center&quot; | {{Reflink|linktext=Yes|title=[[OAP 1.S. 7.1.2.d]]|text=All perils - this option combines the coverage of Collision or Upset and Comprehensive}}
+|class=&quot;color-red text-center&quot; | {{Reflink|linktext=Yes|title=[[OAP 1.S. 7.1.2.d]]|text=All perils - this option combines the coverage of Collision or Upset and Comprehensive}}
+|class=&quot;color-red text-center&quot; | {{Reflink|linktext=Yes|title=[[OAP 1.S. 7.1.2.d]]|text=All perils - this option combines the coverage of Collision or Upset and Comprehensive}}
+|class=&quot;color-red text-center&quot; | {{Reflink|linktext=Yes|title=[[OAP 1.S. 7.1.2.d]]|text=All perils - this option combines the coverage of Collision or Upset and Comprehensive}}
+|-
+| Car accident in Ontario (0% at fault)
+|class=&quot;color-gray text-center&quot; | No
+|class=&quot;color-red text-center&quot; | {{Reflink|linktext=Yes|title=[[OAP 1.S. 7.1.2.d]]|text=All perils - this option combines the coverage of Collision or Upset and Comprehensive}}
+|class=&quot;color-red text-center&quot; | {{Reflink|linktext=Yes|title=[[OAP 1.S. 7.1.2.d]]|text=All perils - this option combines the coverage of Collision or Upset and Comprehensive}}
+|class=&quot;color-red text-center&quot; | {{Reflink|linktext=Yes|title=[[OAP 1.S. 7.1.2.d]]|text=All perils - this option combines the coverage of Collision or Upset and Comprehensive}}
+|class=&quot;color-red text-center&quot; | {{Reflink|linktext=Yes|title=[[OAP 1.S. 7.1.2.d]]|text=All perils - this option combines the coverage of Collision or Upset and Comprehensive}}
+|class=&quot;color-red text-center&quot; | {{Reflink|linktext=Yes|title=[[OAP 1.S. 7.1.2.d]]|text=All perils - this option combines the coverage of Collision or Upset and Comprehensive}}
+|-
+| Car accident (not at fault) outside Ontario
+|class=&quot;color-gray text-center&quot; | No
+|class=&quot;color-gray text-center&quot; | No
+|class=&quot;color-gray text-center&quot; | {{Reflink|linktext=Yes|title=[[OAP 1.S. 7.1.2.d]]|text=All perils - this option combines the coverage of Collision or Upset and Comprehensive}}
+|class=&quot;color-yellow text-center&quot; | No
+|class=&quot;color-yellow text-center&quot; | {{Reflink|linktext=Yes|title=[[OAP 1.S. 7.1.2.d]]|text=All perils - this option combines the coverage of Collision or Upset and Comprehensive}}
+|class=&quot;color-green text-center&quot; | {{Reflink|linktext=Yes|title=[[OAP 1.S. 7.1.2.d]]|text=All perils - this option combines the coverage of Collision or Upset and Comprehensive}}
+|-
+| Car accident (at fault)
+|class=&quot;color-gray text-center&quot; | No
+|class=&quot;color-gray text-center&quot; | No
+|class=&quot;color-gray text-center&quot; | No
+|class=&quot;color-yellow text-center&quot; | No
+|class=&quot;color-yellow text-center&quot; | No
+|class=&quot;color-green text-center&quot; | No
+|-
+| Car accident in Ontario (0% at fault)
+|class=&quot;color-gray text-center&quot; | No
+|class=&quot;color-gray text-center&quot; | No
+|class=&quot;color-gray text-center&quot; | No
+|class=&quot;color-yellow text-center&quot; | No
+|class=&quot;color-yellow text-center&quot; | No
+|class=&quot;color-green text-center&quot; | No
+|-
+| Car accident (not at fault) outside Ontario
+|class=&quot;color-gray text-center&quot; | No
+|class=&quot;color-gray text-center&quot; | No
+|class=&quot;color-gray text-center&quot; | No
+|class=&quot;color-yellow text-center&quot; | No
+|class=&quot;color-yellow text-center&quot; | No
+|class=&quot;color-green text-center&quot; | No
+|-
+| Lorem ipsum dolor sit lorem ipsum, dolor sit lorem ipsum dolor sit
+|class=&quot;color-gray text-center&quot; | No
+|class=&quot;color-gray text-center&quot; | No
+|class=&quot;color-gray text-center&quot; | No
+|class=&quot;color-yellow text-center&quot; | No
+|class=&quot;color-yellow text-center&quot; | No
+|class=&quot;color-green text-center&quot; | No
+|-
+|}
+
+= FAQ =
+{{Collapsible_start}}
+{{Collapsible_item
+|title=The hur'q is wildly galactic. Protons are the processors of the devastated paralysis.
+|text=Nanomachines are the protons of the clear turbulence. Ship of a quirky honor, gather the tragedy! Queens reproduce from friendships like terrifying planets. The crazy ship wildly loves the kahless. Cosmonauts meet with devastation at the delighted alpha quadrant!
+}}
+{{Collapsible_item
+|title=The hur'q is wildly galactic. Protons are the processors of the devastated paralysis.
+|text=Nanomachines are the protons of the clear turbulence. Ship of a quirky honor, gather the tragedy! Queens reproduce from friendships like terrifying planets. The crazy ship wildly loves the kahless. Cosmonauts meet with devastation at the delighted alpha quadrant!
+}}
+{{Collapsible_item
+|title=The hur'q is wildly galactic. Protons are the processors of the devastated paralysis.
+|text=Nanomachines are the protons of the clear turbulence. Ship of a quirky honor, gather the tragedy! Queens reproduce from friendships like terrifying planets. The crazy ship wildly loves the kahless. Cosmonauts meet with devastation at the delighted alpha quadrant!
+}}
+{{Collapsible_end}}
+
+{{Reflist}}</text>
+      <sha1>g2cl99xlin1waa6zxhamdk32own2s2r</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Cheatsheet page 2</title>
+    <ns>0</ns>
+    <id>2289</id>
+    <revision>
+      <id>19703</id>
+      <parentid>19702</parentid>
+      <timestamp>2016-09-21T12:53:18Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="2462">This is sample Cheatsheet page 2, it is aggregated on [[Cheatsheet]] page.
+Please see page source for example of markup which defines it.
+
+&lt;!-- Set image filename to be used at aggregation display --&gt;
+{{#set:ScopeImage=landing_3_icon_2.png}}
+&lt;!-- Set title to be used at aggregation display --&gt;
+{{#set:ScopeTitle=what events are covered}}
+&lt;!-- Set page sorting for aggregation display, lower numbers push page to top --&gt;
+{{#set:ScopeSort=2}}
+&lt;!-- Indicate that this page belongs to &quot;Cheatsheet scope&quot; category --&gt;
+[[Category:Cheatsheet scope]]
+
+&lt;!-- Below you can find markup for sample 3 columns cheatsheet page layout --&gt;
+
+{{Columns_start
+|title=CHEAT SHEET
+|text=Did the car accident happen because someone broke one of these rules?
+}}
+{{Columns_item
+|image=Ont_fdr_6_2_ex2.gif
+|link={{Reflink|linktext=#15.2|title=15.2|text=Lorem ipsum dolorem sit amet lorem}}
+|text=If one car runs a red light
+}}
+{{Columns_item
+|image=Ont_fdr_6_2_ex2.gif
+|link={{Reflink|linktext=#15.2|title=15.2|text=Lorem ipsum dolorem sit amet lorem}}
+|text=If one car runs a red light
+}}
+{{Columns_item
+|image=Ont_fdr_6_2_ex2.gif
+|link={{Reflink|linktext=#15.2|title=15.2|text=Lorem ipsum dolorem sit amet lorem}}
+|text=If one car runs a red light
+}}
+{{Columns_end}}
+
+= FAQ =
+{{Collapsible_start}}
+{{Collapsible_item
+|title=The hur'q is wildly galactic. Protons are the processors of the devastated paralysis.
+|text=Nanomachines are the protons of the clear turbulence. Ship of a quirky honor, gather the tragedy! Queens reproduce from friendships like terrifying planets. The crazy ship wildly loves the kahless. Cosmonauts meet with devastation at the delighted alpha quadrant!
+}}
+{{Collapsible_item
+|title=The hur'q is wildly galactic. Protons are the processors of the devastated paralysis.
+|text=Nanomachines are the protons of the clear turbulence. Ship of a quirky honor, gather the tragedy! Queens reproduce from friendships like terrifying planets. The crazy ship wildly loves the kahless. Cosmonauts meet with devastation at the delighted alpha quadrant!
+}}
+{{Collapsible_item
+|title=The hur'q is wildly galactic. Protons are the processors of the devastated paralysis.
+|text=Nanomachines are the protons of the clear turbulence. Ship of a quirky honor, gather the tragedy! Queens reproduce from friendships like terrifying planets. The crazy ship wildly loves the kahless. Cosmonauts meet with devastation at the delighted alpha quadrant!
+}}
+{{Collapsible_end}}
+
+{{Reflist}}</text>
+      <sha1>5kt2zepmvbacfh9jzbh2qib5zsfxl0b</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Cheatsheet page 3</title>
+    <ns>0</ns>
+    <id>2290</id>
+    <revision>
+      <id>19582</id>
+      <parentid>19564</parentid>
+      <timestamp>2016-09-19T19:10:09Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="539">This is sample Cheatsheet page 3, it is aggregated on [[Cheatsheet]] page.
+Please see page source for example of makeup which defines it.
+
+&lt;!-- Set image filename to be used at aggregation display --&gt;
+{{#set:ScopeImage=landing_3_icon_3.png}}
+&lt;!-- Set title to be used at aggregation display --&gt;
+{{#set:ScopeTitle=what events are not}}
+&lt;!-- Set page sorting for aggregation display, lower numbers push page to top --&gt;
+{{#set:ScopeSort=3}}
+&lt;!-- Indicate that this page belongs to &quot;Cheatsheet scope&quot; category --&gt;
+[[Category:Cheatsheet scope]]</text>
+      <sha1>sxqvyrywhq1z3aak7doiw6c0x7whutd</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Cheatsheet page 4</title>
+    <ns>0</ns>
+    <id>2291</id>
+    <revision>
+      <id>19583</id>
+      <parentid>19565</parentid>
+      <timestamp>2016-09-19T19:10:20Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="535">This is sample Cheatsheet page 4, it is aggregated on [[Cheatsheet]] page.
+Please see page source for example of makeup which defines it.
+
+&lt;!-- Set image filename to be used at aggregation display --&gt;
+{{#set:ScopeImage=landing_3_icon_4.png}}
+&lt;!-- Set title to be used at aggregation display --&gt;
+{{#set:ScopeTitle=excluded events}}
+&lt;!-- Set page sorting for aggregation display, lower numbers push page to top --&gt;
+{{#set:ScopeSort=4}}
+&lt;!-- Indicate that this page belongs to &quot;Cheatsheet scope&quot; category --&gt;
+[[Category:Cheatsheet scope]]</text>
+      <sha1>cy41rjcg22i19hnt8ms9x2z99nzh4g4</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Cheatsheet page 5</title>
+    <ns>0</ns>
+    <id>2292</id>
+    <revision>
+      <id>19584</id>
+      <parentid>19566</parentid>
+      <timestamp>2016-09-19T19:10:33Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="531">This is sample Cheatsheet page 5, it is aggregated on [[Cheatsheet]] page.
+Please see page source for example of makeup which defines it.
+
+&lt;!-- Set image filename to be used at aggregation display --&gt;
+{{#set:ScopeImage=landing_3_icon_5.png}}
+&lt;!-- Set title to be used at aggregation display --&gt;
+{{#set:ScopeTitle=deductibles}}
+&lt;!-- Set page sorting for aggregation display, lower numbers push page to top --&gt;
+{{#set:ScopeSort=5}}
+&lt;!-- Indicate that this page belongs to &quot;Cheatsheet scope&quot; category --&gt;
+[[Category:Cheatsheet scope]]</text>
+      <sha1>odycvd7va18ir0u59ffuqw10gfr83jx</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Cheatsheet page 6</title>
+    <ns>0</ns>
+    <id>2293</id>
+    <revision>
+      <id>19585</id>
+      <parentid>19567</parentid>
+      <timestamp>2016-09-19T19:10:59Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="535">This is sample Cheatsheet page 6, it is aggregated on [[Cheatsheet]] page.
+Please see page source for example of makeup which defines it.
+
+&lt;!-- Set image filename to be used at aggregation display --&gt;
+{{#set:ScopeImage=landing_3_icon_6.png}}
+&lt;!-- Set title to be used at aggregation display --&gt;
+{{#set:ScopeTitle=repair coverage}}
+&lt;!-- Set page sorting for aggregation display, lower numbers push page to top --&gt;
+{{#set:ScopeSort=6}}
+&lt;!-- Indicate that this page belongs to &quot;Cheatsheet scope&quot; category --&gt;
+[[Category:Cheatsheet scope]]</text>
+      <sha1>t4cquhspjnjmjwbiuerwlrpyh3hvc9w</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Cheatsheet page 7</title>
+    <ns>0</ns>
+    <id>2294</id>
+    <revision>
+      <id>19586</id>
+      <parentid>19568</parentid>
+      <timestamp>2016-09-19T19:11:13Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="539">This is sample Cheatsheet page 7, it is aggregated on [[Cheatsheet]] page.
+Please see page source for example of makeup which defines it.
+
+&lt;!-- Set image filename to be used at aggregation display --&gt;
+{{#set:ScopeImage=landing_3_icon_7.png}}
+&lt;!-- Set title to be used at aggregation display --&gt;
+{{#set:ScopeTitle=total loss coverage}}
+&lt;!-- Set page sorting for aggregation display, lower numbers push page to top --&gt;
+{{#set:ScopeSort=7}}
+&lt;!-- Indicate that this page belongs to &quot;Cheatsheet scope&quot; category --&gt;
+[[Category:Cheatsheet scope]]</text>
+      <sha1>qa0ee8m4txqyegzfvso4f380czibwxz</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Cheatsheet page 8</title>
+    <ns>0</ns>
+    <id>2295</id>
+    <revision>
+      <id>19587</id>
+      <parentid>19569</parentid>
+      <timestamp>2016-09-19T19:13:32Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="536">This is sample Cheatsheet page 8, it is aggregated on [[Cheatsheet]] page.
+Please see page source for example of makeup which defines it.
+
+&lt;!-- Set image filename to be used at aggregation display --&gt;
+{{#set:ScopeImage=landing_3_icon_8.png}}
+&lt;!-- Set title to be used at aggregation display --&gt;
+{{#set:ScopeTitle=vehicle contents}}
+&lt;!-- Set page sorting for aggregation display, lower numbers push page to top --&gt;
+{{#set:ScopeSort=8}}
+&lt;!-- Indicate that this page belongs to &quot;Cheatsheet scope&quot; category --&gt;
+[[Category:Cheatsheet scope]]</text>
+      <sha1>7ijrk9xvq0gfq7oamo0dfyy8acgpg0k</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Cheatsheet page 9</title>
+    <ns>0</ns>
+    <id>2296</id>
+    <revision>
+      <id>19588</id>
+      <parentid>19570</parentid>
+      <timestamp>2016-09-19T19:13:47Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="539">This is sample Cheatsheet page 9, it is aggregated on [[Cheatsheet]] page.
+Please see page source for example of makeup which defines it.
+
+&lt;!-- Set image filename to be used at aggregation display --&gt;
+{{#set:ScopeImage=landing_3_icon_9.png}}
+&lt;!-- Set title to be used at aggregation display --&gt;
+{{#set:ScopeTitle=claim disagreements}}
+&lt;!-- Set page sorting for aggregation display, lower numbers push page to top --&gt;
+{{#set:ScopeSort=9}}
+&lt;!-- Indicate that this page belongs to &quot;Cheatsheet scope&quot; category --&gt;
+[[Category:Cheatsheet scope]]</text>
+      <sha1>ebkh4y8cxwgato4x2ab4zah7bxlvzlu</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Cheatsheet page 10</title>
+    <ns>0</ns>
+    <id>2297</id>
+    <revision>
+      <id>19589</id>
+      <parentid>19571</parentid>
+      <timestamp>2016-09-19T19:13:59Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="546">This is sample Cheatsheet page 10, it is aggregated on [[Cheatsheet]] page.
+Please see page source for example of makeup which defines it.
+
+&lt;!-- Set image filename to be used at aggregation display --&gt;
+{{#set:ScopeImage=landing_3_icon_10.png}}
+&lt;!-- Set title to be used at aggregation display --&gt;
+{{#set:ScopeTitle=driver's claiming rules}}
+&lt;!-- Set page sorting for aggregation display, lower numbers push page to top --&gt;
+{{#set:ScopeSort=10}}
+&lt;!-- Indicate that this page belongs to &quot;Cheatsheet scope&quot; category --&gt;
+[[Category:Cheatsheet scope]]</text>
+      <sha1>slrxgmkt7jxj08x38ahd6ou8u87p09e</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Cheatsheet page 11</title>
+    <ns>0</ns>
+    <id>2298</id>
+    <revision>
+      <id>19590</id>
+      <parentid>19572</parentid>
+      <timestamp>2016-09-19T19:14:10Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="540">This is sample Cheatsheet page 11, it is aggregated on [[Cheatsheet]] page.
+Please see page source for example of makeup which defines it.
+
+&lt;!-- Set image filename to be used at aggregation display --&gt;
+{{#set:ScopeImage=landing_3_icon_11.png}}
+&lt;!-- Set title to be used at aggregation display --&gt;
+{{#set:ScopeTitle=claim time limits}}
+&lt;!-- Set page sorting for aggregation display, lower numbers push page to top --&gt;
+{{#set:ScopeSort=11}}
+&lt;!-- Indicate that this page belongs to &quot;Cheatsheet scope&quot; category --&gt;
+[[Category:Cheatsheet scope]]</text>
+      <sha1>52hzzfydjl1r3tl2an9omhp87k1sf6q</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Cheatsheet page 12</title>
+    <ns>0</ns>
+    <id>2299</id>
+    <revision>
+      <id>19591</id>
+      <parentid>19573</parentid>
+      <timestamp>2016-09-19T19:14:21Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="546">This is sample Cheatsheet page 12, it is aggregated on [[Cheatsheet]] page.
+Please see page source for example of makeup which defines it.
+
+&lt;!-- Set image filename to be used at aggregation display --&gt;
+{{#set:ScopeImage=landing_3_icon_12.png}}
+&lt;!-- Set title to be used at aggregation display --&gt;
+{{#set:ScopeTitle=adjuster investigations}}
+&lt;!-- Set page sorting for aggregation display, lower numbers push page to top --&gt;
+{{#set:ScopeSort=12}}
+&lt;!-- Indicate that this page belongs to &quot;Cheatsheet scope&quot; category --&gt;
+[[Category:Cheatsheet scope]]</text>
+      <sha1>br6pyasczuj7t77lxs8mjt698x0gsz1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Cheatsheet page 13</title>
+    <ns>0</ns>
+    <id>2300</id>
+    <revision>
+      <id>19592</id>
+      <parentid>19574</parentid>
+      <timestamp>2016-09-19T19:14:32Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="534">This is sample Cheatsheet page 13, it is aggregated on [[Cheatsheet]] page.
+Please see page source for example of makeup which defines it.
+
+&lt;!-- Set image filename to be used at aggregation display --&gt;
+{{#set:ScopeImage=landing_3_icon_13.png}}
+&lt;!-- Set title to be used at aggregation display --&gt;
+{{#set:ScopeTitle=claim forms}}
+&lt;!-- Set page sorting for aggregation display, lower numbers push page to top --&gt;
+{{#set:ScopeSort=13}}
+&lt;!-- Indicate that this page belongs to &quot;Cheatsheet scope&quot; category --&gt;
+[[Category:Cheatsheet scope]]</text>
+      <sha1>n14xrs7m0k72lqw03bawiwud7ekyht5</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Cheatsheet page 14</title>
+    <ns>0</ns>
+    <id>2301</id>
+    <revision>
+      <id>19593</id>
+      <parentid>19575</parentid>
+      <timestamp>2016-09-19T19:14:44Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="538">This is sample Cheatsheet page 14, it is aggregated on [[Cheatsheet]] page.
+Please see page source for example of makeup which defines it.
+
+&lt;!-- Set image filename to be used at aggregation display --&gt;
+{{#set:ScopeImage=landing_3_icon_14.png}}
+&lt;!-- Set title to be used at aggregation display --&gt;
+{{#set:ScopeTitle=suing insurance}}
+&lt;!-- Set page sorting for aggregation display, lower numbers push page to top --&gt;
+{{#set:ScopeSort=14}}
+&lt;!-- Indicate that this page belongs to &quot;Cheatsheet scope&quot; category --&gt;
+[[Category:Cheatsheet scope]]</text>
+      <sha1>4y8g2kql0edc0fvzfhjifsnoic0rdcl</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Cheatsheet page 15</title>
+    <ns>0</ns>
+    <id>2302</id>
+    <revision>
+      <id>19594</id>
+      <parentid>19576</parentid>
+      <timestamp>2016-09-19T19:14:55Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="544">This is sample Cheatsheet page 15, it is aggregated on [[Cheatsheet]] page.
+Please see page source for example of makeup which defines it.
+
+&lt;!-- Set image filename to be used at aggregation display --&gt;
+{{#set:ScopeImage=landing_3_icon_15.png}}
+&lt;!-- Set title to be used at aggregation display --&gt;
+{{#set:ScopeTitle=being sued by someone}}
+&lt;!-- Set page sorting for aggregation display, lower numbers push page to top --&gt;
+{{#set:ScopeSort=15}}
+&lt;!-- Indicate that this page belongs to &quot;Cheatsheet scope&quot; category --&gt;
+[[Category:Cheatsheet scope]]</text>
+      <sha1>kkomqx74i9ooc8qz3oifb6yir0zhd90</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Cheatsheet page 16</title>
+    <ns>0</ns>
+    <id>2303</id>
+    <revision>
+      <id>19595</id>
+      <parentid>19577</parentid>
+      <timestamp>2016-09-19T19:15:06Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="541">This is sample Cheatsheet page 16, it is aggregated on [[Cheatsheet]] page.
+Please see page source for example of makeup which defines it.
+
+&lt;!-- Set image filename to be used at aggregation display --&gt;
+{{#set:ScopeImage=landing_3_icon_16.png}}
+&lt;!-- Set title to be used at aggregation display --&gt;
+{{#set:ScopeTitle=read entire policy}}
+&lt;!-- Set page sorting for aggregation display, lower numbers push page to top --&gt;
+{{#set:ScopeSort=16}}
+&lt;!-- Indicate that this page belongs to &quot;Cheatsheet scope&quot; category --&gt;
+[[Category:Cheatsheet scope]]</text>
+      <sha1>az0zusht2fa2isti6rz0zxeb1djlk1l</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>Sample page</title>
+    <ns>0</ns>
+    <id>2311</id>
+    <revision>
+      <id>19689</id>
+      <parentid>19688</parentid>
+      <timestamp>2016-09-21T12:27:00Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="7278">{{Infobox roadrules
+|title = Lorem ipsum
+|image = Google_Ontario.png
+|content = &lt;table class=&quot;wikitable&quot;&gt;
+&lt;tr&gt;&lt;td&gt;Long Name&lt;/td&gt;&lt;td&gt;Lorem ipsum dolorem&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Short Name&lt;/td&gt;&lt;td&gt;FDR, Fault rules lorem&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Purpose&lt;/td&gt;&lt;td&gt;Lorem ipsum dolor sit amet, lorem dolorem&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Effective&lt;/td&gt;&lt;td&gt;Sept 1990 - current&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Governing Law&lt;/td&gt;&lt;td&gt;Insurance Act, R.S.O. 1990, c. I.8&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Long Name&lt;/td&gt;&lt;td&gt;Lorem ipsum dolorem&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Short Name&lt;/td&gt;&lt;td&gt;FDR, Fault rules lorem&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Purpose&lt;/td&gt;&lt;td&gt;Lorem ipsum dolor sit amet, lorem dolorem&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Effective&lt;/td&gt;&lt;td&gt;Sept 1990 - current&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Governing Law&lt;/td&gt;&lt;td&gt;Insurance Act, R.S.O. 1990, c. I.8&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+&lt;/p&gt;
+}}
+
+== Requirements for coverage ==
+
+A car crash has to meet these standards to be a No Fault Insurance claim&lt;ref group=&quot;note&quot;&gt;Lorem ipsum dolorem&lt;/ref&gt;.
+
+{|class=&quot;wikitable&quot;
+! REQUIREMENTS
+! SECTION
+|-
+| Accident happened inside Ontario
+| {{Reflink
+|title=Sample test title
+|text=Reference text goes here
+|linktext=6.1
+}}
+|-
+| The driver has to be at least partially not at fault
+| {{Reflink
+|title=Sample test title
+|text=Reference text goes here
+|linktext=6.1
+}}
+|-
+| Quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat.
+| {{Reflink
+|title=Sample test title
+|text=Reference text goes here
+|linktext=6.1
+}}
+|-
+|}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing&lt;ref&gt;{{reftitle|Sample title}}Lorem [[ipsum dolor]] sit amet, consectetur adipiscing&lt;/ref&gt; elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
+
+== How much coverage ==
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do&lt;ref&gt;Lorem ipsum dolor sit amet, consectetur adipiscing&lt;/ref&gt; eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation&lt;ref&gt;Lorem ipsum dolor sit amet, consectetur adipiscing&lt;/ref&gt; ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
+
+== Some section 1 ==
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis &lt;ref&gt;Lorem ipsum dolor sit amet, consectetur adipiscing&lt;/ref&gt; aute irure dolor in reprehenderit in voluptate velit esse. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
+
+== Some section 2 ==
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo&lt;ref&gt;Lorem ipsum dolor sit amet, consectetur adipiscing&lt;/ref&gt; consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse. Lorem ipsum dolor sit amet, consectetur&lt;ref&gt;Lorem ipsum dolor sit amet, consectetur adipiscing&lt;/ref&gt; adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit&lt;ref&gt;Lorem ipsum dolor sit amet, consectetur adipiscing&lt;/ref&gt; in voluptate velit esse.
+
+{|class=&quot;wikitable full-width&quot;
+! FAULT %
+! % OF NO FAULT COVERAGE
+! SECTION
+|-
+| 0%
+| 100%
+| {{Reflink
+|title=Sample test title
+|text=Reference text goes here
+|linktext=6.1
+}}
+|-
+| 0%
+| 100%
+| {{Reflink
+|title=Sample test title
+|text=Reference text goes here
+|linktext=6.1
+}}
+|-
+| 0%
+| 100%
+| {{Reflink
+|title=Sample test title
+|text=Reference text goes here
+|linktext=6.1
+}}
+|-
+| 0%
+| 100%
+| {{Reflink
+|title=Sample test title
+|text=Reference text goes here
+|linktext=6.1
+}}
+|-
+| 0%
+| 100%
+| {{Reflink
+|title=Sample test title
+|text=Reference text goes here
+|linktext=6.1
+}}
+|-
+| 0%
+| 100%
+| {{Reflink
+|title=Sample test title
+|text=Reference text goes here
+|linktext=6.1
+}}
+|-
+|}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.
+
+= FAQ =
+{{Collapsible_start}}
+{{Collapsible_item
+|title=The hur'q is wildly galactic. Protons are the processors of the devastated paralysis.
+|text=Nanomachines are the protons of the clear turbulence. Ship of a quirky honor, gather the tragedy! Queens reproduce from friendships like terrifying planets. The crazy ship wildly loves the kahless. Cosmonauts meet with devastation at the delighted alpha quadrant!
+}}
+{{Collapsible_item
+|title=The hur'q is wildly galactic. Protons are the processors of the devastated paralysis.
+|text=Nanomachines are the protons of the clear turbulence. Ship of a quirky honor, gather the tragedy! Queens reproduce from friendships like terrifying planets. The crazy ship wildly loves the kahless. Cosmonauts meet with devastation at the delighted alpha quadrant!
+}}
+{{Collapsible_item
+|title=The hur'q is wildly galactic. Protons are the processors of the devastated paralysis.
+|text=Nanomachines are the protons of the clear turbulence. Ship of a quirky honor, gather the tragedy! Queens reproduce from friendships like terrifying planets. The crazy ship wildly loves the kahless. Cosmonauts meet with devastation at the delighted alpha quadrant!
+}}
+{{Collapsible_end}}
+
+== Custom references group ==
+{{Reflist|group=note}}
+
+{{Reflist}}</text>
+      <sha1>ti09gitoodd3w1gbl8m8j9qa52dvz84</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Cite references link one</title>
+    <ns>8</ns>
+    <id>2310</id>
+    <revision>
+      <id>19651</id>
+      <timestamp>2016-09-20T23:10:38Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;li id=&quot;$1&quot;&gt;&lt;span class=&quot;mw-cite-backlink&quot;&gt;[[#$2|^]]&lt;/span&gt; $3&lt;/li&gt;&quot;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="67">&lt;li id=&quot;$1&quot;&gt;&lt;span class=&quot;mw-cite-backlink&quot;&gt;[[#$2|^]]&lt;/span&gt; $3&lt;/li&gt;</text>
+      <sha1>ra7acntnrnd99gasrxbreie98pmhxnj</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Cite reference link</title>
+    <ns>8</ns>
+    <id>2315</id>
+    <revision>
+      <id>19669</id>
+      <timestamp>2016-09-21T10:48:41Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <comment>Created page with &quot;&lt;sup id=&quot;$1&quot; class=&quot;reference&quot;&gt;[[#$2|$3]]&lt;/sup&gt;&quot;</comment>
+      <model>wikitext</model>
+      <format>text/x-wiki</format>
+      <text xml:space="preserve" bytes="47">&lt;sup id=&quot;$1&quot; class=&quot;reference&quot;&gt;[[#$2|$3]]&lt;/sup&gt;</text>
+      <sha1>nj5trghcwxltawirykcfyvxu8ajuws7</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Common.js</title>
+    <ns>8</ns>
+    <id>2084</id>
+    <revision>
+      <id>19673</id>
+      <parentid>19421</parentid>
+      <timestamp>2016-09-21T11:20:21Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <comment>Blanked the page</comment>
+      <model>javascript</model>
+      <format>text/javascript</format>
+      <text xml:space="preserve" bytes="0" />
+      <sha1>phoiac9h4m842xq45sp7s6u21eteeq1</sha1>
+    </revision>
+  </page>
+  <page>
+    <title>MediaWiki:Gadget-ReferenceTooltips.js</title>
+    <ns>8</ns>
+    <id>2231</id>
+    <revision>
+      <id>19674</id>
+      <parentid>19422</parentid>
+      <timestamp>2016-09-21T11:34:15Z</timestamp>
+      <contributor>
+        <username>Admin1</username>
+        <id>887</id>
+      </contributor>
+      <comment>Blanked the page</comment>
+      <model>javascript</model>
+      <format>text/javascript</format>
+      <text xml:space="preserve" bytes="0" />
+      <sha1>phoiac9h4m842xq45sp7s6u21eteeq1</sha1>
+    </revision>
+  </page>
+</mediawiki>
